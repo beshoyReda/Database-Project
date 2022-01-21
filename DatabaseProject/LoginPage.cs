@@ -10,26 +10,22 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class MainPage : Form
+    public partial class LoginPage : Form
     {
-        public MainPage()
+        public LoginPage()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Login_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void ButtonContainer_Paint(object sender, PaintEventArgs e)
+        private void LoginPage_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void Content_Paint(object sender, PaintEventArgs e)
-        {
-
+            UserLogin userLogin = new UserLogin();
+            Login.Controls.Add(userLogin);
         }
     }
 }

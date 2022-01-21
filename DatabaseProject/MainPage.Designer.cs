@@ -290,6 +290,7 @@
             this.Content.Name = "Content";
             this.Content.Size = new System.Drawing.Size(1164, 749);
             this.Content.TabIndex = 1;
+            this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
             // MainPage
             // 

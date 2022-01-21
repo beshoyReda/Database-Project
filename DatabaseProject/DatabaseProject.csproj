@@ -98,6 +98,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InitializationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitializationPage.Designer.cs">
+      <DependentUpon>InitializationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,18 @@
     <Compile Include="models\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="InitializationPage.resx">
+      <DependentUpon>InitializationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +145,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ColorsAndSpecs\DatabaseProjectColors.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -153,6 +180,7 @@
     <Content Include="Assets\shopping-cart.png" />
     <Content Include="Assets\Untitled design %281%29.png" />
     <Content Include="Assets\Untitled design.png" />
+    <Content Include="ColorsAndSpecs\ProgramSpecs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
