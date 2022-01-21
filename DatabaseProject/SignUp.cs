@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class Signuppage : UserControl
+    public partial class SignUp : Form
     {
-        public Signuppage()
+        public SignUp()
         {
             InitializeComponent();
-        }
-
-        private void Lname_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void signupbutton_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
     }
 }

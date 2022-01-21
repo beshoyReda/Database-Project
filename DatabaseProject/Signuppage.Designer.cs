@@ -45,16 +45,18 @@ namespace DatabaseProject
             this.Password = new System.Windows.Forms.Label();
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.confirmPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Fname
             // 
             this.Fname.AutoSize = true;
-            this.Fname.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fname.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fname.ForeColor = System.Drawing.Color.White;
             this.Fname.Location = new System.Drawing.Point(17, 71);
             this.Fname.Name = "Fname";
-            this.Fname.Size = new System.Drawing.Size(130, 32);
+            this.Fname.Size = new System.Drawing.Size(127, 31);
             this.Fname.TabIndex = 0;
             this.Fname.Text = "First Name";
             // 
@@ -74,58 +76,60 @@ namespace DatabaseProject
             // 
             // signupbutton
             // 
-            this.signupbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(66)))), ((int)(((byte)(81)))));
+            this.signupbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
+            this.signupbutton.FlatAppearance.BorderSize = 0;
             this.signupbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.signupbutton.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupbutton.ForeColor = System.Drawing.Color.White;
-            this.signupbutton.Location = new System.Drawing.Point(644, 487);
+            this.signupbutton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
+            this.signupbutton.Location = new System.Drawing.Point(350, 487);
             this.signupbutton.Name = "signupbutton";
             this.signupbutton.Size = new System.Drawing.Size(136, 44);
             this.signupbutton.TabIndex = 6;
             this.signupbutton.Text = "Sign Up";
             this.signupbutton.UseVisualStyleBackColor = false;
+            this.signupbutton.Click += new System.EventHandler(this.signupbutton_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(296, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 29);
+            this.label4.Size = new System.Drawing.Size(152, 31);
             this.label4.TabIndex = 7;
             this.label4.Text = "Sign Up Page";
             // 
             // Dateofbirth
             // 
             this.Dateofbirth.AutoSize = true;
-            this.Dateofbirth.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dateofbirth.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dateofbirth.ForeColor = System.Drawing.Color.White;
             this.Dateofbirth.Location = new System.Drawing.Point(17, 191);
             this.Dateofbirth.Name = "Dateofbirth";
-            this.Dateofbirth.Size = new System.Drawing.Size(155, 32);
+            this.Dateofbirth.Size = new System.Drawing.Size(151, 31);
             this.Dateofbirth.TabIndex = 8;
             this.Dateofbirth.Text = "Date Of Birth";
             // 
             // username
             // 
             this.username.AutoSize = true;
-            this.username.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.White;
             this.username.Location = new System.Drawing.Point(17, 316);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(133, 32);
+            this.username.Size = new System.Drawing.Size(129, 31);
             this.username.TabIndex = 9;
             this.username.Text = "User Name";
             // 
             // phonenumber
             // 
             this.phonenumber.AutoSize = true;
-            this.phonenumber.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phonenumber.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phonenumber.ForeColor = System.Drawing.Color.White;
             this.phonenumber.Location = new System.Drawing.Point(17, 429);
             this.phonenumber.Name = "phonenumber";
-            this.phonenumber.Size = new System.Drawing.Size(178, 32);
+            this.phonenumber.Size = new System.Drawing.Size(171, 31);
             this.phonenumber.TabIndex = 11;
             this.phonenumber.Text = "Phone Number";
             // 
@@ -139,13 +143,14 @@ namespace DatabaseProject
             // Lname
             // 
             this.Lname.AutoSize = true;
-            this.Lname.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lname.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lname.ForeColor = System.Drawing.Color.White;
             this.Lname.Location = new System.Drawing.Point(453, 71);
             this.Lname.Name = "Lname";
-            this.Lname.Size = new System.Drawing.Size(127, 32);
+            this.Lname.Size = new System.Drawing.Size(123, 31);
             this.Lname.TabIndex = 13;
             this.Lname.Text = "Last Name";
+            this.Lname.Click += new System.EventHandler(this.Lname_Click);
             // 
             // LnameBox
             // 
@@ -157,11 +162,11 @@ namespace DatabaseProject
             // Address
             // 
             this.Address.AutoSize = true;
-            this.Address.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Address.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Address.ForeColor = System.Drawing.Color.White;
             this.Address.Location = new System.Drawing.Point(453, 191);
             this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(99, 32);
+            this.Address.Size = new System.Drawing.Size(98, 31);
             this.Address.TabIndex = 15;
             this.Address.Text = "Address";
             // 
@@ -175,11 +180,11 @@ namespace DatabaseProject
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.ForeColor = System.Drawing.Color.White;
             this.Password.Location = new System.Drawing.Point(453, 316);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(112, 32);
+            this.Password.Size = new System.Drawing.Size(112, 31);
             this.Password.TabIndex = 17;
             this.Password.Text = "Password";
             // 
@@ -197,11 +202,31 @@ namespace DatabaseProject
             this.dateTimePicker1.Size = new System.Drawing.Size(246, 22);
             this.dateTimePicker1.TabIndex = 18;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(453, 429);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 31);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Confirm Password";
+            // 
+            // confirmPassword
+            // 
+            this.confirmPassword.Location = new System.Drawing.Point(530, 476);
+            this.confirmPassword.Name = "confirmPassword";
+            this.confirmPassword.Size = new System.Drawing.Size(228, 22);
+            this.confirmPassword.TabIndex = 19;
+            // 
             // Signuppage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.confirmPassword);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.PasswordBox);
@@ -243,5 +268,7 @@ namespace DatabaseProject
         private System.Windows.Forms.Label Password;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox confirmPassword;
     }
 }
