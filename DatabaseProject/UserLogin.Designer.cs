@@ -47,7 +47,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
             this.label1.Location = new System.Drawing.Point(75, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 31);
+            this.label1.Size = new System.Drawing.Size(125, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             // 
@@ -61,7 +61,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
             this.label2.Location = new System.Drawing.Point(75, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 31);
+            this.label2.Size = new System.Drawing.Size(116, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -112,6 +112,7 @@
             this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Sign Up?";
+            this.label3.Click += new System.EventHandler(this.sign_up_Click);
             // 
             // label4
             // 

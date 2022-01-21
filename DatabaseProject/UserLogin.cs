@@ -16,5 +16,10 @@ namespace DatabaseProject
         {
             InitializeComponent();
         }
+
+        private void sign_up_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
