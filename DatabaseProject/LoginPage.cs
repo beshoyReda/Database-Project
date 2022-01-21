@@ -27,5 +27,19 @@ namespace DatabaseProject
             UserLogin userLogin = new UserLogin();
             Login.Controls.Add(userLogin);
         }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            Login.Controls.Clear();
+            UserLogin userLogin = new UserLogin();
+            Login.Controls.Add(userLogin);
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Login.Controls.Clear();
+            AdminLogin userLogin = new AdminLogin();
+            Login.Controls.Add(userLogin);
+        }
     }
 }
