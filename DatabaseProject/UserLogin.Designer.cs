@@ -73,7 +73,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(220, 111);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(175, 25);
+            this.txtUsername.Size = new System.Drawing.Size(180, 25);
             this.txtUsername.TabIndex = 2;
             // 
             // txtPassword
@@ -85,12 +85,12 @@
             this.txtPassword.Location = new System.Drawing.Point(220, 189);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
-            this.txtPassword.Size = new System.Drawing.Size(175, 25);
+            this.txtPassword.Size = new System.Drawing.Size(180, 25);
             this.txtPassword.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,6 +101,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label3
             // 
@@ -137,8 +138,9 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.Name = "UserLogin";
-            this.Size = new System.Drawing.Size(498, 459);
+            this.Size = new System.Drawing.Size(503, 464);
             this.ResumeLayout(false);
             this.PerformLayout();
 
