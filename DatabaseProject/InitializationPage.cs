@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseProject.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,7 +44,7 @@ namespace DatabaseProject
 
         private void InitializationPage_Load_1(object sender, EventArgs e)
         {
-
+            GlobalManager.InitializeApp();
         }
     }
 }

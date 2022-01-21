@@ -32,12 +32,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoginContainer = new System.Windows.Forms.Panel();
             this.Login = new System.Windows.Forms.Panel();
-            this.LoginPickerContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btnUser = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.LoginContainer.SuspendLayout();
-            this.LoginPickerContainer.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -54,7 +54,7 @@
             // 
             // LoginContainer
             // 
-            this.LoginContainer.Controls.Add(this.LoginPickerContainer);
+            this.LoginContainer.Controls.Add(this.panel1);
             this.LoginContainer.Controls.Add(this.Login);
             this.LoginContainer.Location = new System.Drawing.Point(517, 187);
             this.LoginContainer.Name = "LoginContainer";
@@ -63,52 +63,56 @@
             // 
             // Login
             // 
-            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(66)))), ((int)(((byte)(81)))));
+            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.Login.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Login.Location = new System.Drawing.Point(0, 106);
             this.Login.Name = "Login";
+            this.Login.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Login.Size = new System.Drawing.Size(503, 464);
             this.Login.TabIndex = 0;
             this.Login.Paint += new System.Windows.Forms.PaintEventHandler(this.Login_Paint);
             // 
-            // LoginPickerContainer
-            // 
-            this.LoginPickerContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
-            this.LoginPickerContainer.Controls.Add(this.btnUser);
-            this.LoginPickerContainer.Controls.Add(this.button2);
-            this.LoginPickerContainer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LoginPickerContainer.Location = new System.Drawing.Point(0, 0);
-            this.LoginPickerContainer.Name = "LoginPickerContainer";
-            this.LoginPickerContainer.Size = new System.Drawing.Size(503, 100);
-            this.LoginPickerContainer.TabIndex = 1;
-            // 
             // btnUser
             // 
-            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(66)))), ((int)(((byte)(81)))));
+            this.btnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.btnUser.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnUser.FlatAppearance.BorderSize = 0;
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUser.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.White;
-            this.btnUser.Location = new System.Drawing.Point(3, 3);
+            this.btnUser.Location = new System.Drawing.Point(0, 0);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(245, 97);
+            this.btnUser.Size = new System.Drawing.Size(248, 100);
             this.btnUser.TabIndex = 0;
             this.btnUser.Text = "User";
             this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // button2
+            // btnAdmin
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(66)))), ((int)(((byte)(81)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(254, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(245, 97);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Admin";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnAdmin.FlatAppearance.BorderSize = 0;
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Location = new System.Drawing.Point(253, 0);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(250, 100);
+            this.btnAdmin.TabIndex = 1;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnAdmin);
+            this.panel1.Controls.Add(this.btnUser);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(503, 100);
+            this.panel1.TabIndex = 1;
             // 
             // LoginPage
             // 
@@ -125,7 +129,7 @@
             this.Load += new System.EventHandler(this.LoginPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.LoginContainer.ResumeLayout(false);
-            this.LoginPickerContainer.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,8 +139,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel LoginContainer;
         private System.Windows.Forms.Panel Login;
-        private System.Windows.Forms.FlowLayoutPanel LoginPickerContainer;
         private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class UserLogin : UserControl
+    public partial class AdminLogin : UserControl
     {
-        public UserLogin()
+        public AdminLogin()
         {
             InitializeComponent();
         }
