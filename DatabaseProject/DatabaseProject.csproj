@@ -121,6 +121,12 @@
     <Compile Include="models\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signuppage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Signuppage.Designer.cs">
+      <DependentUpon>Signuppage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +151,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Signuppage.resx">
+      <DependentUpon>Signuppage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </EmbeddedResource>
