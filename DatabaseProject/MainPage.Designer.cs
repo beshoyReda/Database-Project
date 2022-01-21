@@ -33,8 +33,6 @@
             this.ButtonContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnProducts = new System.Windows.Forms.Button();
-            this.LogoContainer = new System.Windows.Forms.Panel();
-            this.Logo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,17 +43,19 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.LogoContainer = new System.Windows.Forms.Panel();
+            this.Logo = new System.Windows.Forms.PictureBox();
             this.Content = new System.Windows.Forms.Panel();
             this.SidePanel.SuspendLayout();
             this.ButtonContainer.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.LogoContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.LogoContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // SidePanel
@@ -113,28 +113,6 @@
             this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProducts.UseVisualStyleBackColor = true;
             this.btnProducts.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // LogoContainer
-            // 
-            this.LogoContainer.Controls.Add(this.Logo);
-            this.LogoContainer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LogoContainer.Location = new System.Drawing.Point(0, 0);
-            this.LogoContainer.Name = "LogoContainer";
-            this.LogoContainer.Size = new System.Drawing.Size(275, 129);
-            this.LogoContainer.TabIndex = 0;
-            // 
-            // Logo
-            // 
-            this.Logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logo.BackgroundImage")));
-            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Logo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.InitialImage = ((System.Drawing.Image)(resources.GetObject("Logo.InitialImage")));
-            this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(275, 129);
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
             // 
             // panel2
             // 
@@ -282,15 +260,38 @@
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // LogoContainer
+            // 
+            this.LogoContainer.Controls.Add(this.Logo);
+            this.LogoContainer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoContainer.Location = new System.Drawing.Point(0, 0);
+            this.LogoContainer.Name = "LogoContainer";
+            this.LogoContainer.Size = new System.Drawing.Size(275, 129);
+            this.LogoContainer.TabIndex = 0;
+            // 
+            // Logo
+            // 
+            this.Logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logo.BackgroundImage")));
+            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.InitialImage = ((System.Drawing.Image)(resources.GetObject("Logo.InitialImage")));
+            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(275, 129);
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            // 
             // Content
             // 
+            this.Content.AutoScroll = true;
             this.Content.Dock = System.Windows.Forms.DockStyle.Top;
             this.Content.Location = new System.Drawing.Point(275, 0);
             this.Content.Name = "Content";
             this.Content.Size = new System.Drawing.Size(1164, 749);
             this.Content.TabIndex = 1;
             // 
-            // Form1
+            // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -299,19 +300,19 @@
             this.Controls.Add(this.Content);
             this.Controls.Add(this.SidePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.SidePanel.ResumeLayout(false);
             this.ButtonContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.LogoContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.LogoContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
 
         }
