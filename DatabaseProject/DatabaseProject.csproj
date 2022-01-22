@@ -202,6 +202,9 @@
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="wallet.resx">
+      <DependentUpon>wallet.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ColorsAndSpecs\DatabaseProjectColors.pdf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

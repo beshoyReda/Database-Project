@@ -46,8 +46,8 @@
             this.LogoContainer = new System.Windows.Forms.Panel();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.Content = new System.Windows.Forms.Panel();
-            this.Header = new System.Windows.Forms.Panel();
             this.ProductContainer = new System.Windows.Forms.Panel();
+            this.Header = new System.Windows.Forms.Panel();
             this.SidePanel.SuspendLayout();
             this.ButtonContainer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -297,15 +297,6 @@
             this.Content.TabIndex = 1;
             this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
-            // Header
-            // 
-            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1164, 287);
-            this.Header.TabIndex = 0;
-            this.Header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
             // ProductContainer
             // 
             this.ProductContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -314,6 +305,16 @@
             this.ProductContainer.Padding = new System.Windows.Forms.Padding(5, 5, 5, 0);
             this.ProductContainer.Size = new System.Drawing.Size(1164, 462);
             this.ProductContainer.TabIndex = 1;
+            this.ProductContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductContainer_Paint);
+            // 
+            // Header
+            // 
+            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(1164, 287);
+            this.Header.TabIndex = 0;
+            this.Header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // MainPage
             // 

@@ -37,5 +37,10 @@ namespace DatabaseProject
             Header header = new Header();
             Header.Controls.Add(header);
         }
+
+        private void ProductContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
