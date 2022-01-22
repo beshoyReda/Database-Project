@@ -104,6 +104,18 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeaturedSlideShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeaturedSlideShow.Designer.cs">
+      <DependentUpon>FeaturedSlideShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Header.Designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
     <Compile Include="InitializationPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +159,9 @@
     </Compile>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InitializationPage.resx">
       <DependentUpon>InitializationPage.cs</DependentUpon>
@@ -194,9 +209,12 @@
   <ItemGroup>
     <Content Include="Assets\001-heart.png" />
     <Content Include="Assets\001-id-card.png" />
+    <Content Include="Assets\001-logout.png" />
     <Content Include="Assets\001-price-tag.png" />
+    <Content Include="Assets\001-right-arrow.png" />
     <Content Include="Assets\001-wallet.png" />
     <Content Include="Assets\002-avatar.png" />
+    <Content Include="Assets\002-left-arrow.png" />
     <Content Include="Assets\002-shop.png" />
     <Content Include="Assets\002-shopping-bag.png" />
     <Content Include="Assets\003-invoice.png" />
@@ -205,6 +223,9 @@
     <Content Include="Assets\shopping-cart %281%29.png" />
     <Content Include="Assets\shopping-cart %282%29.png" />
     <Content Include="Assets\shopping-cart.png" />
+    <Content Include="Assets\SlideshowImages\Headphone.jpg" />
+    <Content Include="Assets\SlideshowImages\Laptop.jpg" />
+    <Content Include="Assets\SlideshowImages\Phone.jpg" />
     <Content Include="Assets\Untitled design %281%29.png" />
     <Content Include="Assets\Untitled design.png" />
     <Content Include="ColorsAndSpecs\ProgramSpecs.txt" />
