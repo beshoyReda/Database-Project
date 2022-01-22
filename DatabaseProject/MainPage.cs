@@ -42,5 +42,20 @@ namespace DatabaseProject
         {
 
         }
+
+        private void ProductContainer_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MainPage_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                ProductControl productControl = new ProductControl();
+                productControl.Margin = new Padding(5, 5, 5, 5);
+                ProductContainer.Controls.Add(productControl);
+            }
+        }
     }
 }
