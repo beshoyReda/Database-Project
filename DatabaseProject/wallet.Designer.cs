@@ -110,6 +110,7 @@ namespace DatabaseProject
             // 
             // PurchasesPanal
             // 
+            this.PurchasesPanal.AutoScroll = true;
             this.PurchasesPanal.BackColor = System.Drawing.Color.White;
             this.PurchasesPanal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PurchasesPanal.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -141,6 +142,7 @@ namespace DatabaseProject
             this.Controls.Add(this.panel1);
             this.Name = "wallet";
             this.Size = new System.Drawing.Size(1135, 559);
+            this.Load += new System.EventHandler(this.wallet_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
