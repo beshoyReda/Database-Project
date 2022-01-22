@@ -120,9 +120,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline);
             this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(201, 309);
+            this.button1.Location = new System.Drawing.Point(198, 309);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.Size = new System.Drawing.Size(90, 27);
             this.button1.TabIndex = 7;
             this.button1.Text = "Sign Up?";
             this.button1.UseVisualStyleBackColor = true;
