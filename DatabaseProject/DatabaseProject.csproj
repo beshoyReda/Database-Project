@@ -137,6 +137,12 @@
     <Compile Include="models\DBController.cs" />
     <Compile Include="models\GlobalManager.cs" />
     <Compile Include="models\Logger.cs" />
+    <Compile Include="ProductControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductControl.Designer.cs">
+      <DependentUpon>ProductControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs">
