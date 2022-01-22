@@ -157,6 +157,12 @@
     <Compile Include="UserLogin.Designer.cs">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="wallet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="wallet.Designer.cs">
+      <DependentUpon>wallet.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
