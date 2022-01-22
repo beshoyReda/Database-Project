@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class SignUp : Form
+    public partial class ProductPage : UserControl
     {
-        public SignUp()
+        public ProductPage()
         {
             InitializeComponent();
         }
