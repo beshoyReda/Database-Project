@@ -157,7 +157,7 @@
             // 
             // NextPic
             // 
-            this.NextPic.BackColor = System.Drawing.Color.Transparent;
+            this.NextPic.BackColor = System.Drawing.Color.Gainsboro;
             this.NextPic.FlatAppearance.BorderSize = 0;
             this.NextPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NextPic.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -171,7 +171,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackColor = System.Drawing.Color.Gainsboro;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

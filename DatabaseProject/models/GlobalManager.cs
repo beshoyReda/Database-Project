@@ -20,7 +20,7 @@ namespace DatabaseProject.models
                 DBController.Initialize();
                 imagePath.Add(Path.Combine(path, "Phone.jpeg"));
                 imagePath.Add(Path.Combine(path, "Phone.jpeg"));
-                imagePath.Add(Path.Combine(path, "Laptop.jpg"));
+                imagePath.Add(Path.Combine(path, "Laptop.jpeg"));
                 imagePath.Add(Path.Combine(path, "Headphone.jpg"));
                 return true;
             }

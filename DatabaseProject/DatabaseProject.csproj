@@ -212,9 +212,13 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Cart.cs" />
+    <Compile Include="models\Customer.cs" />
     <Compile Include="models\DBController.cs" />
     <Compile Include="models\GlobalManager.cs" />
+    <Compile Include="models\Invoice.cs" />
     <Compile Include="models\Logger.cs" />
+    <Compile Include="models\Product.cs" />
     <Compile Include="ProductControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
