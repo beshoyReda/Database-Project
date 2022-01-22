@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Header));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.LogOut = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.SlideShowTimer = new System.Windows.Forms.Timer(this.components);
             this.NextPic = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SlideShow)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1164, 68);
             this.panel1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(808, 0);
+            this.button4.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(271, 68);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Deals";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // LogOut
             // 
@@ -144,6 +159,7 @@
             // 
             this.NextPic.FlatAppearance.BorderSize = 0;
             this.NextPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NextPic.ForeColor = System.Drawing.SystemColors.ControlText;
             this.NextPic.Image = ((System.Drawing.Image)(resources.GetObject("NextPic.Image")));
             this.NextPic.Location = new System.Drawing.Point(1084, 92);
             this.NextPic.Name = "NextPic";
@@ -163,21 +179,6 @@
             this.button5.TabIndex = 3;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(808, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(271, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Deals";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // Header
             // 
