@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Header));
             this.panel1 = new System.Windows.Forms.Panel();
             this.LogOut = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,14 +39,15 @@
             this.SlideShowTimer = new System.Windows.Forms.Timer(this.components);
             this.NextPic = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SlideShow)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.LogOut);
             this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.LogOut);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -72,22 +72,7 @@
             this.LogOut.Size = new System.Drawing.Size(80, 68);
             this.LogOut.TabIndex = 4;
             this.LogOut.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(813, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(271, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Deals";
-            this.button4.UseVisualStyleBackColor = false;
+            this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
             // 
             // button3
             // 
@@ -179,6 +164,21 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(808, 0);
+            this.button4.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(271, 68);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Deals";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // Header
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,7 +201,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox SlideShow;
@@ -209,5 +208,6 @@
         private System.Windows.Forms.Button NextPic;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button LogOut;
+        private System.Windows.Forms.Button button4;
     }
 }
