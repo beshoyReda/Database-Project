@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductControl));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ProductName = new System.Windows.Forms.Label();
+            this.ProductNameControl = new System.Windows.Forms.Label();
             this.RankContainer = new System.Windows.Forms.Panel();
             this.Rank = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -56,16 +56,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ProductName
+            // ProductNameControl
             // 
-            this.ProductName.AutoSize = true;
-            this.ProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.ProductName.Location = new System.Drawing.Point(2, 143);
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(121, 23);
-            this.ProductName.TabIndex = 1;
-            this.ProductName.Text = "Product Name";
+            this.ProductNameControl.AutoSize = true;
+            this.ProductNameControl.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductNameControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
+            this.ProductNameControl.Location = new System.Drawing.Point(2, 143);
+            this.ProductNameControl.Name = "ProductNameControl";
+            this.ProductNameControl.Size = new System.Drawing.Size(121, 23);
+            this.ProductNameControl.TabIndex = 1;
+            this.ProductNameControl.Text = "Product Name";
             // 
             // RankContainer
             // 
@@ -178,7 +178,7 @@
             this.Controls.Add(this.Favorite);
             this.Controls.Add(this.PriceContainer);
             this.Controls.Add(this.RankContainer);
-            this.Controls.Add(this.ProductName);
+            this.Controls.Add(this.ProductNameControl);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ProductControl";
             this.Size = new System.Drawing.Size(212, 274);
@@ -197,7 +197,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label ProductName;
+        private System.Windows.Forms.Label ProductNameControl;
         private System.Windows.Forms.Panel RankContainer;
         private System.Windows.Forms.Label Rank;
         private System.Windows.Forms.PictureBox pictureBox2;

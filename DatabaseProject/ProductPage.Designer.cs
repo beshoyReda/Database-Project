@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductPage));
             this.ProdContainer = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ProductName = new System.Windows.Forms.Label();
+            this.ProductNamePage = new System.Windows.Forms.Label();
             this.DiscLabel = new System.Windows.Forms.Label();
             this.Pricelbl = new System.Windows.Forms.Label();
             this.Description = new System.Windows.Forms.RichTextBox();
@@ -72,7 +72,7 @@
             this.ProdContainer.Controls.Add(this.Description);
             this.ProdContainer.Controls.Add(this.Pricelbl);
             this.ProdContainer.Controls.Add(this.DiscLabel);
-            this.ProdContainer.Controls.Add(this.ProductName);
+            this.ProdContainer.Controls.Add(this.ProductNamePage);
             this.ProdContainer.Location = new System.Drawing.Point(59, 50);
             this.ProdContainer.Name = "ProdContainer";
             this.ProdContainer.Size = new System.Drawing.Size(1037, 443);
@@ -86,16 +86,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ProductName
+            // ProductNamePage
             // 
-            this.ProductName.AutoSize = true;
-            this.ProductName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.ProductName.Location = new System.Drawing.Point(240, 41);
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(206, 38);
-            this.ProductName.TabIndex = 1;
-            this.ProductName.Text = "Product Name";
+            this.ProductNamePage.AutoSize = true;
+            this.ProductNamePage.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductNamePage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
+            this.ProductNamePage.Location = new System.Drawing.Point(240, 41);
+            this.ProductNamePage.Name = "ProductNamePage";
+            this.ProductNamePage.Size = new System.Drawing.Size(206, 38);
+            this.ProductNamePage.TabIndex = 1;
+            this.ProductNamePage.Text = "Product Name";
             // 
             // DiscLabel
             // 
@@ -327,7 +327,7 @@
 
         private System.Windows.Forms.Panel ProdContainer;
         private System.Windows.Forms.Label DiscLabel;
-        private System.Windows.Forms.Label ProductName;
+        private System.Windows.Forms.Label ProductNamePage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Pricelbl;
         private System.Windows.Forms.RichTextBox Description;

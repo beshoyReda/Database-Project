@@ -38,7 +38,7 @@ namespace DatabaseProject
                 TotalAmount.Text = (Q * price).ToString();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Incorrect Value");
             }
@@ -60,7 +60,7 @@ namespace DatabaseProject
 
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Incorrect Value");
             }
