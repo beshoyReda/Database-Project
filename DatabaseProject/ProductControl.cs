@@ -21,5 +21,14 @@ namespace DatabaseProject
         {
             Favorite.BackgroundImage = Image.FromFile(@"C:\Users\Omar\source\repos\Database-Project\DatabaseProject\Assets\heart (3).png");
         }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            ProductPopUp productPage = new ProductPopUp();
+            productPage.Show();
+            
+            
+
+        }
     }
 }

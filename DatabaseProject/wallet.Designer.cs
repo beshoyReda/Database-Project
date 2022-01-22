@@ -30,20 +30,19 @@ namespace DatabaseProject
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.Balance = new System.Windows.Forms.Label();
             this.btntopup = new System.Windows.Forms.Button();
             this.purchases = new System.Windows.Forms.Label();
             this.Installments = new System.Windows.Forms.Label();
             this.PurchasesPanal = new System.Windows.Forms.FlowLayoutPanel();
             this.InstallmentsPanal = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Balance);
             this.panel1.Location = new System.Drawing.Point(26, 46);
@@ -51,10 +50,22 @@ namespace DatabaseProject
             this.panel1.Size = new System.Drawing.Size(1081, 98);
             this.panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
+            this.label1.Location = new System.Drawing.Point(604, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 38);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "20";
+            // 
             // Balance
             // 
             this.Balance.AutoSize = true;
             this.Balance.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
             this.Balance.Location = new System.Drawing.Point(463, 28);
             this.Balance.Name = "Balance";
             this.Balance.Size = new System.Drawing.Size(122, 38);
@@ -79,6 +90,7 @@ namespace DatabaseProject
             // 
             this.purchases.AutoSize = true;
             this.purchases.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchases.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
             this.purchases.Location = new System.Drawing.Point(21, 290);
             this.purchases.Name = "purchases";
             this.purchases.Size = new System.Drawing.Size(103, 28);
@@ -89,6 +101,7 @@ namespace DatabaseProject
             // 
             this.Installments.AutoSize = true;
             this.Installments.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Installments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
             this.Installments.Location = new System.Drawing.Point(585, 290);
             this.Installments.Name = "Installments";
             this.Installments.Size = new System.Drawing.Size(123, 28);
@@ -114,16 +127,6 @@ namespace DatabaseProject
             this.InstallmentsPanal.Name = "InstallmentsPanal";
             this.InstallmentsPanal.Size = new System.Drawing.Size(517, 205);
             this.InstallmentsPanal.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(604, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 38);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "20";
             // 
             // wallet
             // 
