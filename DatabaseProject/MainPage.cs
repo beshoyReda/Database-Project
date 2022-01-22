@@ -50,7 +50,7 @@ namespace DatabaseProject
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 30; i++)
             {
                 ProductControl productControl = new ProductControl();
                 productControl.Margin = new Padding(5, 5, 5, 5);
