@@ -46,8 +46,8 @@
             this.LogoContainer = new System.Windows.Forms.Panel();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.Content = new System.Windows.Forms.Panel();
-            this.Header = new System.Windows.Forms.Panel();
             this.ProductContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.Header = new System.Windows.Forms.Panel();
             this.SidePanel.SuspendLayout();
             this.ButtonContainer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -146,6 +146,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel3
             // 
@@ -175,6 +176,7 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -297,15 +299,6 @@
             this.Content.TabIndex = 1;
             this.Content.Paint += new System.Windows.Forms.PaintEventHandler(this.Content_Paint);
             // 
-            // Header
-            // 
-            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1164, 287);
-            this.Header.TabIndex = 0;
-            this.Header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
             // ProductContainer
             // 
             this.ProductContainer.AutoScroll = true;
@@ -315,6 +308,15 @@
             this.ProductContainer.Size = new System.Drawing.Size(1164, 462);
             this.ProductContainer.TabIndex = 1;
             this.ProductContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductContainer_Paint_1);
+            // 
+            // Header
+            // 
+            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(1164, 287);
+            this.Header.TabIndex = 0;
+            this.Header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // MainPage
             // 
