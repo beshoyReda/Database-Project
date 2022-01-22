@@ -157,6 +157,7 @@
             // 
             // NextPic
             // 
+            this.NextPic.BackColor = System.Drawing.Color.Transparent;
             this.NextPic.FlatAppearance.BorderSize = 0;
             this.NextPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NextPic.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -165,19 +166,22 @@
             this.NextPic.Name = "NextPic";
             this.NextPic.Size = new System.Drawing.Size(80, 43);
             this.NextPic.TabIndex = 2;
-            this.NextPic.UseVisualStyleBackColor = true;
+            this.NextPic.UseVisualStyleBackColor = false;
             this.NextPic.Click += new System.EventHandler(this.NextPic_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(3, 92);
+            this.button5.Location = new System.Drawing.Point(-1, 92);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 43);
             this.button5.TabIndex = 3;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Header
