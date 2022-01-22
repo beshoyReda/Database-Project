@@ -16,5 +16,55 @@ namespace DatabaseProject
         {
             InitializeComponent();
         }
+
+        private void State_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Parent.Parent.Dispose();
+        }
+
+        private void Addbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int Q = int.Parse(Qnumber.Text.Trim());
+                Q = (Q + 1);
+                int price = int.Parse(Pricelbl.Text.Trim());
+                Qnumber.Text = Q.ToString();
+                TotalAmount.Text = (Q * price).ToString();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Incorrect Value");
+            }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int Q = int.Parse(Qnumber.Text.Trim());
+                if (Q > 1)
+                {
+                    Q = (Q - 1);
+                    int price = int.Parse(Pricelbl.Text.Trim());
+                    Qnumber.Text = Q.ToString();
+                    TotalAmount.Text = (Q * price).ToString();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Incorrect Value");
+            }
+
+        }
     }
 }
