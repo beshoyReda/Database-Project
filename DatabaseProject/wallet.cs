@@ -16,5 +16,15 @@ namespace DatabaseProject
         {
             InitializeComponent();
         }
+
+        private void wallet_Load(object sender, EventArgs e)
+        {
+            Purchases purchases = new Purchases();
+            PurchasesPanal.Controls.Add(purchases);
+            purchases = new Purchases();
+            PurchasesPanal.Controls.Add(purchases);
+            purchases = new Purchases();
+            PurchasesPanal.Controls.Add(purchases);
+        }
     }
 }

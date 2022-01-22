@@ -212,9 +212,13 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Cart.cs" />
+    <Compile Include="models\Customer.cs" />
     <Compile Include="models\DBController.cs" />
     <Compile Include="models\GlobalManager.cs" />
+    <Compile Include="models\Invoice.cs" />
     <Compile Include="models\Logger.cs" />
+    <Compile Include="models\Product.cs" />
     <Compile Include="ProductControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +245,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchases.Designer.cs">
+      <DependentUpon>Purchases.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signuppage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,6 +308,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Purchases.resx">
+      <DependentUpon>Purchases.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signuppage.resx">
       <DependentUpon>Signuppage.cs</DependentUpon>
     </EmbeddedResource>

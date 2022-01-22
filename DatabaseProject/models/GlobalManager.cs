@@ -9,6 +9,7 @@ namespace DatabaseProject.models
 {
     internal static class GlobalManager
     {
+        public static Customer ActiveUser { get; set; }
         public static List<string> imagePath = new List<string>();
         private static string path = @"C:\Users\Omar\source\repos\DatabaseProject\DatabaseProject\Assets\SlideshowImages";
 
@@ -20,7 +21,7 @@ namespace DatabaseProject.models
                 DBController.Initialize();
                 imagePath.Add(Path.Combine(path, "Phone.jpeg"));
                 imagePath.Add(Path.Combine(path, "Phone.jpeg"));
-                imagePath.Add(Path.Combine(path, "Laptop.jpg"));
+                imagePath.Add(Path.Combine(path, "Laptop.jpeg"));
                 imagePath.Add(Path.Combine(path, "Headphone.jpg"));
                 return true;
             }
@@ -31,6 +32,17 @@ namespace DatabaseProject.models
             }
 
 
+        }
+        public static void InitializeUser(Customer customer)
+        {
+            if (customer == null)
+            {
+                Logger.LogException("NULL USER");
+            }
+            else
+            {
+                ActiveUser = customer;
+            }
         }
     }
 }
