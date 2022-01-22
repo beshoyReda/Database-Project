@@ -12,6 +12,7 @@ namespace DatabaseProject.models
         public Customer Customer { get; set; }
         public List<Product> Products { get; set;}
         public int Total { get; set; }
+        public int installment { get; set; }
 
         public Cart()
         {
@@ -49,6 +50,32 @@ namespace DatabaseProject.models
             {
                 Logger.LogException(ex.Message);
             }
+        }
+        public List<Invoice> GetInvoices()
+        {
+            if (Products == null)
+            {
+                Logger.LogException("Null product list");
+                return null;
+            }
+            List<Invoice> list = new List<Invoice>();
+            DateTime date = DateTime.Now;
+            string InvoiceID = Guid.NewGuid().ToString();
+            foreach (Product product in Products)
+            {
+                int quantity = Products.FindAll(delegate(Product p){ return p.id == product.id && p.state == product.state;}).Count();
+                Products.RemoveAll(delegate (Product p) { return p.id == product.id && p.state == product.state; });
+                int t = product.price * quantity;
+                Invoice invoice = new Invoice(InvoiceID, Customer.ID, product.id, installment, date, t, quantity, product.state);
+                list.Add(invoice); 
+            }
+            return list;
+        }
+        public List<Invoice> Checkout(int ins)
+        {
+            installment = ins;
+            List<Invoice> list = GetInvoices();
+            return list;
         }
     }
 }

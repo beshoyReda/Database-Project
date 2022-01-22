@@ -16,6 +16,7 @@ namespace DatabaseProject.models
         public string subCategory { get; set; }
         public int price { get; set; }
         public string inventoryID { get; set; }
+        public int state { get; set; }
         public int newQuantity { get; set; }
         public int reQuantity { get; set; }
 

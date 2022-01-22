@@ -9,6 +9,7 @@ namespace DatabaseProject.models
 {
     internal static class GlobalManager
     {
+        public static Customer ActiveUser { get; set; }
         public static List<string> imagePath = new List<string>();
         private static string path = @"C:\Users\Omar\source\repos\DatabaseProject\DatabaseProject\Assets\SlideshowImages";
 
@@ -31,6 +32,17 @@ namespace DatabaseProject.models
             }
 
 
+        }
+        public static void InitializeUser(Customer customer)
+        {
+            if (customer == null)
+            {
+                Logger.LogException("NULL USER");
+            }
+            else
+            {
+                ActiveUser = customer;
+            }
         }
     }
 }
