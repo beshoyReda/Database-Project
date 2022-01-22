@@ -29,6 +29,7 @@ namespace DatabaseProject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wallet));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Balance = new System.Windows.Forms.Label();
             this.balanceBox = new System.Windows.Forms.TextBox();
@@ -37,11 +38,13 @@ namespace DatabaseProject
             this.purchases = new System.Windows.Forms.Label();
             this.Installments = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pricetag = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pricetag);
             this.panel1.Controls.Add(this.balanceBox);
             this.panel1.Controls.Add(this.Balance);
             this.panel1.Location = new System.Drawing.Point(31, 37);
@@ -116,6 +119,19 @@ namespace DatabaseProject
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "";
             // 
+            // pricetag
+            // 
+            this.pricetag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
+            this.pricetag.FlatAppearance.BorderSize = 0;
+            this.pricetag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pricetag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pricetag.Image = ((System.Drawing.Image)(resources.GetObject("pricetag.Image")));
+            this.pricetag.Location = new System.Drawing.Point(551, 34);
+            this.pricetag.Name = "pricetag";
+            this.pricetag.Size = new System.Drawing.Size(79, 47);
+            this.pricetag.TabIndex = 2;
+            this.pricetag.UseVisualStyleBackColor = false;
+            // 
             // wallet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -146,5 +162,6 @@ namespace DatabaseProject
         private System.Windows.Forms.Label purchases;
         private System.Windows.Forms.Label Installments;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button pricetag;
     }
 }

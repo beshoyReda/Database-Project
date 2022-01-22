@@ -57,5 +57,10 @@ namespace DatabaseProject
             SlideShow.BackgroundImage = Image.FromFile(GlobalManager.imagePath[counter]); ;
             SlideShow.BackgroundImageLayout = ImageLayout.Zoom;
         }
+
+        private void LogOut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
