@@ -31,14 +31,14 @@ namespace DatabaseProject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wallet));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Balance = new System.Windows.Forms.Label();
+            this.pricetag = new System.Windows.Forms.Button();
             this.balanceBox = new System.Windows.Forms.TextBox();
+            this.Balance = new System.Windows.Forms.Label();
             this.btntopup = new System.Windows.Forms.Button();
-            this.Installmentsbox = new System.Windows.Forms.RichTextBox();
             this.purchases = new System.Windows.Forms.Label();
             this.Installments = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pricetag = new System.Windows.Forms.Button();
+            this.PurchasesPanal = new System.Windows.Forms.FlowLayoutPanel();
+            this.InstallmentsPanal = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,26 @@ namespace DatabaseProject
             this.panel1.Size = new System.Drawing.Size(910, 107);
             this.panel1.TabIndex = 0;
             // 
+            // pricetag
+            // 
+            this.pricetag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
+            this.pricetag.FlatAppearance.BorderSize = 0;
+            this.pricetag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pricetag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pricetag.Image = ((System.Drawing.Image)(resources.GetObject("pricetag.Image")));
+            this.pricetag.Location = new System.Drawing.Point(551, 34);
+            this.pricetag.Name = "pricetag";
+            this.pricetag.Size = new System.Drawing.Size(79, 47);
+            this.pricetag.TabIndex = 2;
+            this.pricetag.UseVisualStyleBackColor = false;
+            // 
+            // balanceBox
+            // 
+            this.balanceBox.Location = new System.Drawing.Point(231, 46);
+            this.balanceBox.Name = "balanceBox";
+            this.balanceBox.Size = new System.Drawing.Size(266, 22);
+            this.balanceBox.TabIndex = 1;
+            // 
             // Balance
             // 
             this.Balance.AutoSize = true;
@@ -61,13 +81,6 @@ namespace DatabaseProject
             this.Balance.Size = new System.Drawing.Size(115, 38);
             this.Balance.TabIndex = 0;
             this.Balance.Text = "Balance";
-            // 
-            // balanceBox
-            // 
-            this.balanceBox.Location = new System.Drawing.Point(231, 46);
-            this.balanceBox.Name = "balanceBox";
-            this.balanceBox.Size = new System.Drawing.Size(266, 22);
-            this.balanceBox.TabIndex = 1;
             // 
             // btntopup
             // 
@@ -82,14 +95,6 @@ namespace DatabaseProject
             this.btntopup.TabIndex = 5;
             this.btntopup.Text = "Top Up";
             this.btntopup.UseVisualStyleBackColor = false;
-            // 
-            // Installmentsbox
-            // 
-            this.Installmentsbox.Location = new System.Drawing.Point(582, 316);
-            this.Installmentsbox.Name = "Installmentsbox";
-            this.Installmentsbox.Size = new System.Drawing.Size(359, 210);
-            this.Installmentsbox.TabIndex = 7;
-            this.Installmentsbox.Text = "";
             // 
             // purchases
             // 
@@ -111,36 +116,29 @@ namespace DatabaseProject
             this.Installments.TabIndex = 9;
             this.Installments.Text = "Installments";
             // 
-            // richTextBox1
+            // PurchasesPanal
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(59, 316);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(359, 210);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "";
+            this.PurchasesPanal.Location = new System.Drawing.Point(59, 338);
+            this.PurchasesPanal.Name = "PurchasesPanal";
+            this.PurchasesPanal.Size = new System.Drawing.Size(335, 205);
+            this.PurchasesPanal.TabIndex = 10;
             // 
-            // pricetag
+            // InstallmentsPanal
             // 
-            this.pricetag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
-            this.pricetag.FlatAppearance.BorderSize = 0;
-            this.pricetag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pricetag.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pricetag.Image = ((System.Drawing.Image)(resources.GetObject("pricetag.Image")));
-            this.pricetag.Location = new System.Drawing.Point(551, 34);
-            this.pricetag.Name = "pricetag";
-            this.pricetag.Size = new System.Drawing.Size(79, 47);
-            this.pricetag.TabIndex = 2;
-            this.pricetag.UseVisualStyleBackColor = false;
+            this.InstallmentsPanal.Location = new System.Drawing.Point(582, 338);
+            this.InstallmentsPanal.Name = "InstallmentsPanal";
+            this.InstallmentsPanal.Size = new System.Drawing.Size(335, 205);
+            this.InstallmentsPanal.TabIndex = 11;
             // 
             // wallet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.InstallmentsPanal);
+            this.Controls.Add(this.PurchasesPanal);
             this.Controls.Add(this.Installments);
             this.Controls.Add(this.purchases);
-            this.Controls.Add(this.Installmentsbox);
             this.Controls.Add(this.btntopup);
             this.Controls.Add(this.panel1);
             this.Name = "wallet";
@@ -158,10 +156,10 @@ namespace DatabaseProject
         private System.Windows.Forms.Label Balance;
         private System.Windows.Forms.TextBox balanceBox;
         private System.Windows.Forms.Button btntopup;
-        private System.Windows.Forms.RichTextBox Installmentsbox;
         private System.Windows.Forms.Label purchases;
         private System.Windows.Forms.Label Installments;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button pricetag;
+        private System.Windows.Forms.FlowLayoutPanel PurchasesPanal;
+        private System.Windows.Forms.FlowLayoutPanel InstallmentsPanal;
     }
 }
