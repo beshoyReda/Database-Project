@@ -60,7 +60,9 @@ namespace DatabaseProject
 
         private void LogOut_Click(object sender, EventArgs e)
         {
-
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
+            this.Parent.Parent.Parent.Dispose();
         }
     }
 }

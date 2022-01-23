@@ -20,8 +20,9 @@ namespace DatabaseProject
         private void btnLogin_Click(object sender, EventArgs e)
         {
             MainPage mainPage = new MainPage();
-            this.Parent.Parent.Parent.Dispose();
             mainPage.Show();
+            this.Parent.Parent.Parent.Dispose();
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -32,9 +33,13 @@ namespace DatabaseProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainPage mainPage = new MainPage();
+            SignUpPopup signUpPopup = new SignUpPopup();
+            signUpPopup.Show();
+        }
 
-            mainPage.Show();
+        private void label4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Can't help you!");
         }
     }
 }

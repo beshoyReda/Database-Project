@@ -251,6 +251,12 @@
     <Compile Include="Signuppage.Designer.cs">
       <DependentUpon>Signuppage.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignUpPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpPopup.Designer.cs">
+      <DependentUpon>SignUpPopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -307,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Signuppage.resx">
       <DependentUpon>Signuppage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpPopup.resx">
+      <DependentUpon>SignUpPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>

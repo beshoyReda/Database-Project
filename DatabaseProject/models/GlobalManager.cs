@@ -10,6 +10,7 @@ namespace DatabaseProject.models
     internal static class GlobalManager
     {
         public static Customer ActiveUser { get; set; }
+        public static Cart cart { get; set; }
         public static List<string> imagePath = new List<string>();
         private static string path = @"C:\Users\Omar\source\repos\DatabaseProject\DatabaseProject\Assets\SlideshowImages";
 
@@ -33,15 +34,28 @@ namespace DatabaseProject.models
 
 
         }
-        public static void InitializeUser(Customer customer)
+        public static void SigninUser(Customer customer)
         {
             if (customer == null)
             {
-                Logger.LogException("NULL USER");
+                Logger.LogException("SIGN IN NULL USER");
             }
             else
             {
                 ActiveUser = customer;
+                cart = new Cart();
+            }
+        }
+        public static void SignOutUser()
+        {
+            if (ActiveUser == null)
+            {
+                Logger.LogException("SIGN OUT NULL USER");
+            }
+            else
+            {
+                ActiveUser = null;
+                cart = new Cart();
             }
         }
     }
