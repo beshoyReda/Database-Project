@@ -1,7 +1,7 @@
 ﻿
 namespace DatabaseProject
 {
-    partial class Cart
+    partial class CartControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace DatabaseProject
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cart));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CartControl));
             this.Shopping_lbl = new System.Windows.Forms.Label();
             this.Deselect_linklbl = new System.Windows.Forms.LinkLabel();
             this.Shopping_panel = new System.Windows.Forms.Panel();
@@ -96,6 +96,7 @@ namespace DatabaseProject
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1149, 291);
             this.flowLayoutPanel1.TabIndex = 9;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // total
             // 

@@ -64,5 +64,12 @@ namespace DatabaseProject
             loginPage.Show();
             this.Parent.Parent.Parent.Dispose();
         }
+
+        private void SearchHeader_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();   
+            this.Parent.Parent.Controls[0].Controls.Clear();
+            this.Parent.Parent.Controls[0].Controls.Add(search);
+        }
     }
 }

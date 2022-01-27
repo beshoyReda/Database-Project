@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class Profile : UserControl
+    public partial class Search : UserControl
     {
-        public Profile()
+        public Search()
         {
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

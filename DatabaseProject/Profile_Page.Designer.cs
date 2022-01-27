@@ -1,6 +1,6 @@
 ﻿namespace DatabaseProject
 {
-    partial class Profile_Page
+    partial class Profile
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,168 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ProfileContainer = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.OrderO = new System.Windows.Forms.Label();
-            this.AdressA = new System.Windows.Forms.Label();
-            this.EmailM = new System.Windows.Forms.Label();
-            this.PhoneP = new System.Windows.Forms.Label();
-            this.NameN = new System.Windows.Forms.Label();
-            this.OrdersHistory = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BalanceLabel = new System.Windows.Forms.Label();
             this.Email = new System.Windows.Forms.Label();
-            this.Address = new System.Windows.Forms.Label();
-            this.PhoneNumber = new System.Windows.Forms.Label();
-            this.Name = new System.Windows.Forms.Label();
+            this.Age = new System.Windows.Forms.Label();
+            this.Namelbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ProfileContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // ProfileContainer
+            // 
+            this.ProfileContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
+            this.ProfileContainer.Controls.Add(this.panel3);
+            this.ProfileContainer.Controls.Add(this.panel1);
+            this.ProfileContainer.Location = new System.Drawing.Point(15, 17);
+            this.ProfileContainer.Name = "ProfileContainer";
+            this.ProfileContainer.Size = new System.Drawing.Size(1096, 685);
+            this.ProfileContainer.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.panel3.Location = new System.Drawing.Point(15, 279);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1064, 385);
+            this.panel3.TabIndex = 1;
+            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.Controls.Add(this.OrderO);
-            this.panel1.Controls.Add(this.AdressA);
-            this.panel1.Controls.Add(this.EmailM);
-            this.panel1.Controls.Add(this.PhoneP);
-            this.panel1.Controls.Add(this.NameN);
-            this.panel1.Controls.Add(this.OrdersHistory);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.BalanceLabel);
             this.panel1.Controls.Add(this.Email);
-            this.panel1.Controls.Add(this.Address);
-            this.panel1.Controls.Add(this.PhoneNumber);
-            this.panel1.Controls.Add(this.Name);
-            this.panel1.Location = new System.Drawing.Point(59, 232);
+            this.panel1.Controls.Add(this.Age);
+            this.panel1.Controls.Add(this.Namelbl);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(15, 19);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1065, 304);
-            this.panel1.TabIndex = 11;
+            this.panel1.Size = new System.Drawing.Size(1064, 227);
+            this.panel1.TabIndex = 0;
             // 
-            // OrderO
+            // label1
             // 
-            this.OrderO.AutoSize = true;
-            this.OrderO.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.OrderO.Location = new System.Drawing.Point(25, 235);
-            this.OrderO.Name = "OrderO";
-            this.OrderO.Size = new System.Drawing.Size(26, 25);
-            this.OrderO.TabIndex = 19;
-            this.OrderO.Text = "O";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(351, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 31);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "200";
             // 
-            // AdressA
+            // BalanceLabel
             // 
-            this.AdressA.AutoSize = true;
-            this.AdressA.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdressA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.AdressA.Location = new System.Drawing.Point(588, 153);
-            this.AdressA.Name = "AdressA";
-            this.AdressA.Size = new System.Drawing.Size(24, 25);
-            this.AdressA.TabIndex = 18;
-            this.AdressA.Text = "A";
-            // 
-            // EmailM
-            // 
-            this.EmailM.AutoSize = true;
-            this.EmailM.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.EmailM.Location = new System.Drawing.Point(25, 153);
-            this.EmailM.Name = "EmailM";
-            this.EmailM.Size = new System.Drawing.Size(28, 25);
-            this.EmailM.TabIndex = 17;
-            this.EmailM.Text = "M";
-            // 
-            // PhoneP
-            // 
-            this.PhoneP.AutoSize = true;
-            this.PhoneP.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.PhoneP.Location = new System.Drawing.Point(588, 66);
-            this.PhoneP.Name = "PhoneP";
-            this.PhoneP.Size = new System.Drawing.Size(22, 25);
-            this.PhoneP.TabIndex = 16;
-            this.PhoneP.Text = "P";
-            // 
-            // NameN
-            // 
-            this.NameN.AutoSize = true;
-            this.NameN.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.NameN.Location = new System.Drawing.Point(25, 66);
-            this.NameN.Name = "NameN";
-            this.NameN.Size = new System.Drawing.Size(25, 25);
-            this.NameN.TabIndex = 15;
-            this.NameN.Text = "N";
-            // 
-            // OrdersHistory
-            // 
-            this.OrdersHistory.AutoSize = true;
-            this.OrdersHistory.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrdersHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.OrdersHistory.Location = new System.Drawing.Point(14, 195);
-            this.OrdersHistory.Name = "OrdersHistory";
-            this.OrdersHistory.Size = new System.Drawing.Size(153, 28);
-            this.OrdersHistory.TabIndex = 14;
-            this.OrdersHistory.Text = "Orders History";
+            this.BalanceLabel.AutoSize = true;
+            this.BalanceLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BalanceLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.BalanceLabel.Location = new System.Drawing.Point(242, 163);
+            this.BalanceLabel.Name = "BalanceLabel";
+            this.BalanceLabel.Size = new System.Drawing.Size(103, 31);
+            this.BalanceLabel.TabIndex = 4;
+            this.BalanceLabel.Text = "Balance:";
             // 
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.Email.Location = new System.Drawing.Point(14, 109);
+            this.Email.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.SystemColors.Control;
+            this.Email.Location = new System.Drawing.Point(242, 92);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(64, 28);
-            this.Email.TabIndex = 13;
-            this.Email.Text = "Email";
+            this.Email.Size = new System.Drawing.Size(277, 31);
+            this.Email.TabIndex = 3;
+            this.Email.Text = "Email: email@email.com";
             // 
-            // Address
+            // Age
             // 
-            this.Address.AutoSize = true;
-            this.Address.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.Address.Location = new System.Drawing.Point(565, 109);
-            this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(89, 28);
-            this.Address.TabIndex = 12;
-            this.Address.Text = "Address";
+            this.Age.AutoSize = true;
+            this.Age.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age.ForeColor = System.Drawing.SystemColors.Control;
+            this.Age.Location = new System.Drawing.Point(395, 26);
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(70, 28);
+            this.Age.TabIndex = 2;
+            this.Age.Text = "22 yrs";
             // 
-            // PhoneNumber
+            // Namelbl
             // 
-            this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.PhoneNumber.Location = new System.Drawing.Point(565, 13);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(156, 28);
-            this.PhoneNumber.TabIndex = 11;
-            this.PhoneNumber.Text = "Phone Number";
-            // 
-            // Name
-            // 
-            this.Name.AutoSize = true;
-            this.Name.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.Name.Location = new System.Drawing.Point(14, 13);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(68, 27);
-            this.Name.TabIndex = 10;
-            this.Name.Text = "Name";
+            this.Namelbl.AutoSize = true;
+            this.Namelbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namelbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.Namelbl.Location = new System.Drawing.Point(242, 19);
+            this.Namelbl.Name = "Namelbl";
+            this.Namelbl.Size = new System.Drawing.Size(147, 38);
+            this.Namelbl.TabIndex = 1;
+            this.Namelbl.Text = "Joe Smith";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(59, 32);
+            this.panel2.Location = new System.Drawing.Point(9, 9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(213, 188);
-            this.panel2.TabIndex = 12;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.Size = new System.Drawing.Size(216, 210);
+            this.panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 178);
-            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.Size = new System.Drawing.Size(196, 190);
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Profile
@@ -197,10 +154,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            //this.Name = "Profile_Page";
-            this.Size = new System.Drawing.Size(1164, 749);
+            this.Controls.Add(this.ProfileContainer);
+            this.Name = "Profile";
+            this.Size = new System.Drawing.Size(1126, 715);
+            this.ProfileContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -210,17 +167,15 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel ProfileContainer;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label OrderO;
-        private System.Windows.Forms.Label AdressA;
-        private System.Windows.Forms.Label EmailM;
-        private System.Windows.Forms.Label PhoneP;
-        private System.Windows.Forms.Label NameN;
-        private System.Windows.Forms.Label OrdersHistory;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label BalanceLabel;
         private System.Windows.Forms.Label Email;
-        private System.Windows.Forms.Label Address;
-        private System.Windows.Forms.Label PhoneNumber;
-        private System.Windows.Forms.Label Name;
+        private System.Windows.Forms.Label Age;
+        private System.Windows.Forms.Label Namelbl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

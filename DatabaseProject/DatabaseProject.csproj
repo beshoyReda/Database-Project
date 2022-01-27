@@ -170,11 +170,11 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cart.cs">
+    <Compile Include="CartControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Cart.Designer.cs">
-      <DependentUpon>Cart.cs</DependentUpon>
+    <Compile Include="CartControl.Designer.cs">
+      <DependentUpon>CartControl.cs</DependentUpon>
     </Compile>
     <Compile Include="FeaturedSlideShow.cs">
       <SubType>UserControl</SubType>
@@ -251,6 +251,12 @@
     <Compile Include="Purchases.Designer.cs">
       <DependentUpon>Purchases.cs</DependentUpon>
     </Compile>
+    <Compile Include="Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signuppage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -269,6 +275,12 @@
     <Compile Include="UserLogin.Designer.cs">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usersidebar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usersidebar.Designer.cs">
+      <DependentUpon>Usersidebar.cs</DependentUpon>
+    </Compile>
     <Compile Include="wallet.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -278,8 +290,8 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cart.resx">
-      <DependentUpon>Cart.cs</DependentUpon>
+    <EmbeddedResource Include="CartControl.resx">
+      <DependentUpon>CartControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
@@ -305,6 +317,9 @@
     <EmbeddedResource Include="ProductPopUp.resx">
       <DependentUpon>ProductPopUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Profile_Page.resx">
+      <DependentUpon>Profile_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -317,6 +332,9 @@
     <EmbeddedResource Include="Purchases.resx">
       <DependentUpon>Purchases.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signuppage.resx">
       <DependentUpon>Signuppage.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usersidebar.resx">
+      <DependentUpon>Usersidebar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wallet.resx">
       <DependentUpon>wallet.cs</DependentUpon>

@@ -29,7 +29,6 @@ namespace DatabaseProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Balance = new System.Windows.Forms.Label();
             this.btntopup = new System.Windows.Forms.Button();
@@ -37,18 +36,11 @@ namespace DatabaseProject
             this.Installments = new System.Windows.Forms.Label();
             this.PurchasesPanal = new System.Windows.Forms.FlowLayoutPanel();
             this.InstallmentsPanal = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.Balance);
-            this.panel1.Location = new System.Drawing.Point(26, 46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1081, 98);
-            this.panel1.TabIndex = 0;
+
             // 
             // label1
             // 
@@ -139,12 +131,11 @@ namespace DatabaseProject
             this.Controls.Add(this.Installments);
             this.Controls.Add(this.purchases);
             this.Controls.Add(this.btntopup);
-            this.Controls.Add(this.panel1);
+
             this.Name = "wallet";
             this.Size = new System.Drawing.Size(1135, 559);
             this.Load += new System.EventHandler(this.wallet_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

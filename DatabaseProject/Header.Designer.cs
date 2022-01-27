@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Header));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.DealsHeader = new System.Windows.Forms.Button();
             this.LogOut = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.FavoritesHeader = new System.Windows.Forms.Button();
+            this.SearchHeader = new System.Windows.Forms.Button();
+            this.CategoriesHeader = new System.Windows.Forms.Button();
             this.SlideShow = new System.Windows.Forms.PictureBox();
             this.SlideShowTimer = new System.Windows.Forms.Timer(this.components);
             this.NextPic = new System.Windows.Forms.Button();
@@ -46,31 +46,31 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.DealsHeader);
             this.panel1.Controls.Add(this.LogOut);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.FavoritesHeader);
+            this.panel1.Controls.Add(this.SearchHeader);
+            this.panel1.Controls.Add(this.CategoriesHeader);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 219);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1164, 68);
             this.panel1.TabIndex = 0;
             // 
-            // button4
+            // DealsHeader
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(808, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(271, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Deals";
-            this.button4.UseVisualStyleBackColor = false;
+            this.DealsHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.DealsHeader.FlatAppearance.BorderSize = 0;
+            this.DealsHeader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DealsHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DealsHeader.ForeColor = System.Drawing.Color.White;
+            this.DealsHeader.Location = new System.Drawing.Point(808, 0);
+            this.DealsHeader.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.DealsHeader.Name = "DealsHeader";
+            this.DealsHeader.Size = new System.Drawing.Size(271, 68);
+            this.DealsHeader.TabIndex = 3;
+            this.DealsHeader.Text = "Deals";
+            this.DealsHeader.UseVisualStyleBackColor = false;
             // 
             // LogOut
             // 
@@ -89,53 +89,54 @@
             this.LogOut.UseVisualStyleBackColor = false;
             this.LogOut.Click += new System.EventHandler(this.LogOut_Click);
             // 
-            // button3
+            // FavoritesHeader
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(542, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(271, 68);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Favorites";
-            this.button3.UseVisualStyleBackColor = false;
+            this.FavoritesHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.FavoritesHeader.Dock = System.Windows.Forms.DockStyle.Left;
+            this.FavoritesHeader.FlatAppearance.BorderSize = 0;
+            this.FavoritesHeader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FavoritesHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FavoritesHeader.ForeColor = System.Drawing.Color.White;
+            this.FavoritesHeader.Location = new System.Drawing.Point(542, 0);
+            this.FavoritesHeader.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.FavoritesHeader.Name = "FavoritesHeader";
+            this.FavoritesHeader.Size = new System.Drawing.Size(271, 68);
+            this.FavoritesHeader.TabIndex = 2;
+            this.FavoritesHeader.Text = "Favorites";
+            this.FavoritesHeader.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // SearchHeader
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(271, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(271, 68);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Filters";
-            this.button2.UseVisualStyleBackColor = false;
+            this.SearchHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.SearchHeader.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SearchHeader.FlatAppearance.BorderSize = 0;
+            this.SearchHeader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchHeader.ForeColor = System.Drawing.Color.White;
+            this.SearchHeader.Location = new System.Drawing.Point(271, 0);
+            this.SearchHeader.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.SearchHeader.Name = "SearchHeader";
+            this.SearchHeader.Size = new System.Drawing.Size(271, 68);
+            this.SearchHeader.TabIndex = 1;
+            this.SearchHeader.Text = "Search";
+            this.SearchHeader.UseVisualStyleBackColor = false;
+            this.SearchHeader.Click += new System.EventHandler(this.SearchHeader_Click);
             // 
-            // button1
+            // CategoriesHeader
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(271, 68);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Categories";
-            this.button1.UseVisualStyleBackColor = false;
+            this.CategoriesHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.CategoriesHeader.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CategoriesHeader.FlatAppearance.BorderSize = 0;
+            this.CategoriesHeader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CategoriesHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoriesHeader.ForeColor = System.Drawing.Color.White;
+            this.CategoriesHeader.Location = new System.Drawing.Point(0, 0);
+            this.CategoriesHeader.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.CategoriesHeader.Name = "CategoriesHeader";
+            this.CategoriesHeader.Size = new System.Drawing.Size(271, 68);
+            this.CategoriesHeader.TabIndex = 0;
+            this.CategoriesHeader.Text = "Categories";
+            this.CategoriesHeader.UseVisualStyleBackColor = false;
             // 
             // SlideShow
             // 
@@ -205,14 +206,14 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button CategoriesHeader;
+        private System.Windows.Forms.Button FavoritesHeader;
+        private System.Windows.Forms.Button SearchHeader;
         private System.Windows.Forms.PictureBox SlideShow;
         private System.Windows.Forms.Timer SlideShowTimer;
         private System.Windows.Forms.Button NextPic;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button LogOut;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button DealsHeader;
     }
 }

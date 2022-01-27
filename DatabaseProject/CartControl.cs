@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class Cart : UserControl
+    public partial class CartControl : UserControl
     {
-        public Cart()
+        public CartControl()
         {
             InitializeComponent();
         }
@@ -33,6 +33,11 @@ namespace DatabaseProject
         }
 
         private void Cart_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

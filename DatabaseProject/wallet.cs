@@ -12,10 +12,7 @@ namespace DatabaseProject
 {
     public partial class wallet : UserControl
     {
-        public wallet()
-        {
-            InitializeComponent();
-        }
+        public wallet() => InitializeComponent();
 
         private void wallet_Load(object sender, EventArgs e)
         {

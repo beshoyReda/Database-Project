@@ -15,6 +15,7 @@ namespace DatabaseProject
         public MainPage()
         {
             InitializeComponent();
+            loadSidePanel();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,7 +57,7 @@ namespace DatabaseProject
         private void button1_Click_1(object sender, EventArgs e)
         {
             ProductContainer.Controls.Clear();
-            Cart cart = new Cart();
+            CartControl cart = new CartControl();
             ProductContainer.Controls.Add(cart);
         }
 
@@ -70,12 +71,28 @@ namespace DatabaseProject
         private void load_products()
         {
             ProductContainer.Controls.Clear();
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 5; i++)
             {
                 ProductControl productControl = new ProductControl();
                 productControl.Margin = new Padding(5, 5, 5, 5);
                 ProductContainer.Controls.Add(productControl);
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile();
+            ProductContainer.Controls.Clear();
+            ProductContainer.Controls.Add(profile);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void loadSidePanel()
+        {
+            SidePanelContainer.Controls.Add(new Usersidebar());
         }
     }
 }
