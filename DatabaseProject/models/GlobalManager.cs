@@ -19,8 +19,9 @@ namespace DatabaseProject.models
         {
             try
             {
+                DBController dbController = new DBController();
                 Logger.Initialize();
-                DBController.Initialize();
+                dbController.Initialize();
                 imagePath.Add(Path.Combine(path, "Phone.jpeg"));
                 imagePath.Add(Path.Combine(path, "Phone.jpeg"));
                 imagePath.Add(Path.Combine(path, "Laptop.jpeg"));

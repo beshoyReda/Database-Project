@@ -47,12 +47,16 @@ namespace DatabaseProject
             this.FnameBox = new System.Windows.Forms.TextBox();
             this.Fname = new System.Windows.Forms.Label();
             this.Exitbtn = new System.Windows.Forms.Button();
+            this.Usernamebox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
+            this.panel1.Controls.Add(this.Usernamebox);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.confirmPassword);
             this.panel1.Controls.Add(this.dateTimePicker1);
@@ -241,6 +245,24 @@ namespace DatabaseProject
             this.Exitbtn.UseVisualStyleBackColor = true;
             this.Exitbtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Usernamebox
+            // 
+            this.Usernamebox.Location = new System.Drawing.Point(464, 299);
+            this.Usernamebox.Name = "Usernamebox";
+            this.Usernamebox.Size = new System.Drawing.Size(228, 22);
+            this.Usernamebox.TabIndex = 40;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(458, 265);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 31);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Username";
+            // 
             // Signuppage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,5 +298,7 @@ namespace DatabaseProject
         private System.Windows.Forms.TextBox FnameBox;
         private System.Windows.Forms.Label Fname;
         private System.Windows.Forms.Button Exitbtn;
+        private System.Windows.Forms.TextBox Usernamebox;
+        private System.Windows.Forms.Label label2;
     }
 }

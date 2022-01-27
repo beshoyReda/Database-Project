@@ -4,20 +4,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DatabaseProject.models
 {
-    internal static class DBController
+    internal class DBController
     {
-        private static string server;
-        private static string database;
-        private static string uid;
-        private static string password;
-        public static MySqlConnection connection;
-        public static void Initialize()
+        private string server;
+        private string database;
+        private string uid;
+        private string password;
+        public MySqlConnection connection;
+
+        public DBController()
+        {
+            Initialize();
+        }
+        public void Initialize()
         {
             server = "localhost";
-            database = "CLINCALSYSTEM";
+            database = "nuelectronics";
             uid = "root";
             password = "mysqlpassword";
             string connectionString;
@@ -25,6 +31,46 @@ namespace DatabaseProject.models
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
             connection = new MySqlConnection(connectionString);
+        }
+
+        public bool OpenConnection()
+        {
+            try
+            {
+                connection.Open();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                if (ex.Number == 0)
+                {
+                    MessageBox.Show("Cannot connect to server.");
+                }
+                if (ex.Number == 1045)
+                {
+                    MessageBox.Show("Invalid Credentials.");
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                return false;
+            }
+        }
+
+
+        public bool CloseConnection()
+        {
+            try
+            {
+                connection.Close();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
     }
 }
