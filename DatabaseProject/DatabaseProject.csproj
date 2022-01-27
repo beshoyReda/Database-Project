@@ -183,6 +183,12 @@
     <Compile Include="AdminSidebar.Designer.cs">
       <DependentUpon>AdminSidebar.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminUserManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminUserManage.Designer.cs">
+      <DependentUpon>AdminUserManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminSidebar.resx">
       <DependentUpon>AdminSidebar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserManage.resx">
+      <DependentUpon>AdminUserManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminUsers.resx">
       <DependentUpon>AdminUsers.cs</DependentUpon>

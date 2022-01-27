@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,12 @@ namespace DatabaseProject
         private void button1_Click(object sender, EventArgs e)
         {
             this.Parent.Dispose();
+        }
+
+        private void signupbutton_Click_1(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

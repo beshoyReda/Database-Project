@@ -206,6 +206,7 @@ namespace DatabaseProject
             this.signupbutton.TabIndex = 24;
             this.signupbutton.Text = "Sign Up";
             this.signupbutton.UseVisualStyleBackColor = false;
+            this.signupbutton.Click += new System.EventHandler(this.signupbutton_Click_1);
             // 
             // FnameBox
             // 
