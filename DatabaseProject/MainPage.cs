@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseProject.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,8 +36,7 @@ namespace DatabaseProject
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
-            Header header = new Header();
-            Header.Controls.Add(header);
+
         }
 
         private void ProductContainer_Paint(object sender, PaintEventArgs e)
@@ -70,6 +70,8 @@ namespace DatabaseProject
 
         private void load_products()
         {
+            Header header = new Header();
+            Header.Controls.Add(header);
             ProductContainer.Controls.Clear();
             for (int i = 0; i < 5; i++)
             {
@@ -92,7 +94,17 @@ namespace DatabaseProject
         }
         private void loadSidePanel()
         {
-            SidePanelContainer.Controls.Add(new Usersidebar());
+            if (GlobalManager.IsAdmin)
+            {
+                SidePanelContainer.Controls.Add(new AdminSidebar());
+                Content.Controls.Clear();
+                Content.Controls.Add(new AdminProducts());
+            }
+            else
+            {
+                SidePanelContainer.Controls.Add(new Usersidebar());
+                load_products();
+            }
         }
     }
 }

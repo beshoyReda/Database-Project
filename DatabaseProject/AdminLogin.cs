@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseProject.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,7 @@ namespace DatabaseProject
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            GlobalManager.IsAdmin = true;
             MainPage mainPage = new MainPage();
             this.Parent.Parent.Parent.Dispose();
             mainPage.Show();

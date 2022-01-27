@@ -130,6 +130,7 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
@@ -169,6 +170,24 @@
     </Compile>
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminProducts.Designer.cs">
+      <DependentUpon>AdminProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSidebar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminSidebar.Designer.cs">
+      <DependentUpon>AdminSidebar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.Designer.cs">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="CartControl.cs">
       <SubType>UserControl</SubType>
@@ -237,6 +256,18 @@
     <Compile Include="ProductPopUp.Designer.cs">
       <DependentUpon>ProductPopUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductManageAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductManageAdmin.Designer.cs">
+      <DependentUpon>ProductManageAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSearchAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductSearchAdmin.Designer.cs">
+      <DependentUpon>ProductSearchAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -269,6 +300,12 @@
     <Compile Include="SignUpPopup.Designer.cs">
       <DependentUpon>SignUpPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAdminSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAdminSearch.Designer.cs">
+      <DependentUpon>UserAdminSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -289,6 +326,15 @@
     </Compile>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProducts.resx">
+      <DependentUpon>AdminProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSidebar.resx">
+      <DependentUpon>AdminSidebar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUsers.resx">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CartControl.resx">
       <DependentUpon>CartControl.cs</DependentUpon>
@@ -317,6 +363,12 @@
     <EmbeddedResource Include="ProductPopUp.resx">
       <DependentUpon>ProductPopUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductManageAdmin.resx">
+      <DependentUpon>ProductManageAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductSearchAdmin.resx">
+      <DependentUpon>ProductSearchAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Profile_Page.resx">
       <DependentUpon>Profile_Page.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpPopup.resx">
       <DependentUpon>SignUpPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAdminSearch.resx">
+      <DependentUpon>UserAdminSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
@@ -379,10 +434,15 @@
     <Content Include="Assets\002-shopping-bag.png" />
     <Content Include="Assets\003-invoice.png" />
     <Content Include="Assets\003-settings.png" />
+    <Content Include="Assets\chart-histogram %281%29.png" />
+    <Content Include="Assets\chart-histogram.png" />
+    <Content Include="Assets\dollar-currency-symbol %281%29.png" />
     <Content Include="Assets\dollar-sign.png" />
     <Content Include="Assets\heart %282%29.png" />
     <Content Include="Assets\heart %283%29.png" />
     <Content Include="Assets\heart.png" />
+    <Content Include="Assets\id-badge %282%29.png" />
+    <Content Include="Assets\id-badge.png" />
     <Content Include="Assets\shopping-bag.png" />
     <Content Include="Assets\shopping-cart %281%29.png" />
     <Content Include="Assets\shopping-cart %282%29.png" />
@@ -391,8 +451,13 @@
     <Content Include="Assets\SlideshowImages\Laptop.jpg" />
     <Content Include="Assets\SlideshowImages\Phone.jpg" />
     <Content Include="Assets\star.png" />
+    <Content Include="Assets\stats.png" />
     <Content Include="Assets\Untitled design %281%29.png" />
     <Content Include="Assets\Untitled design.png" />
+    <Content Include="Assets\user %281%29.png" />
+    <Content Include="Assets\user-add.png" />
+    <Content Include="Assets\user-delete.png" />
+    <Content Include="Assets\user.png" />
     <Content Include="ColorsAndSpecs\ProgramSpecs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
