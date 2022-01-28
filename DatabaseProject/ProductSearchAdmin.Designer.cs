@@ -72,6 +72,7 @@
             this.ControlContainer.Name = "ControlContainer";
             this.ControlContainer.Size = new System.Drawing.Size(1164, 573);
             this.ControlContainer.TabIndex = 2;
+            this.ControlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlContainer_Paint);
             // 
             // Quantity
             // 

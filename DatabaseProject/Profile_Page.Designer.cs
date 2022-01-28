@@ -33,12 +33,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BalanceLabel = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.Label();
+            this.usernamelbl = new System.Windows.Forms.Label();
             this.Age = new System.Windows.Forms.Label();
             this.Namelbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Addresslbl = new System.Windows.Forms.Label();
             this.ProfileContainer.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +60,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.panel3.Controls.Add(this.Addresslbl);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(15, 279);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1064, 385);
@@ -67,7 +72,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BalanceLabel);
-            this.panel1.Controls.Add(this.Email);
+            this.panel1.Controls.Add(this.usernamelbl);
             this.panel1.Controls.Add(this.Age);
             this.panel1.Controls.Add(this.Namelbl);
             this.panel1.Controls.Add(this.panel2);
@@ -98,23 +103,23 @@
             this.BalanceLabel.TabIndex = 4;
             this.BalanceLabel.Text = "Balance:";
             // 
-            // Email
+            // usernamelbl
             // 
-            this.Email.AutoSize = true;
-            this.Email.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.ForeColor = System.Drawing.SystemColors.Control;
-            this.Email.Location = new System.Drawing.Point(242, 92);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(277, 31);
-            this.Email.TabIndex = 3;
-            this.Email.Text = "Email: email@email.com";
+            this.usernamelbl.AutoSize = true;
+            this.usernamelbl.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.usernamelbl.Location = new System.Drawing.Point(242, 92);
+            this.usernamelbl.Name = "usernamelbl";
+            this.usernamelbl.Size = new System.Drawing.Size(277, 31);
+            this.usernamelbl.TabIndex = 3;
+            this.usernamelbl.Text = "Email: email@email.com";
             // 
             // Age
             // 
             this.Age.AutoSize = true;
             this.Age.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Age.ForeColor = System.Drawing.SystemColors.Control;
-            this.Age.Location = new System.Drawing.Point(395, 26);
+            this.Age.Location = new System.Drawing.Point(449, 19);
             this.Age.Name = "Age";
             this.Age.Size = new System.Drawing.Size(70, 28);
             this.Age.TabIndex = 2;
@@ -125,7 +130,7 @@
             this.Namelbl.AutoSize = true;
             this.Namelbl.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Namelbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.Namelbl.Location = new System.Drawing.Point(242, 19);
+            this.Namelbl.Location = new System.Drawing.Point(241, 19);
             this.Namelbl.Name = "Namelbl";
             this.Namelbl.Size = new System.Drawing.Size(147, 38);
             this.Namelbl.TabIndex = 1;
@@ -149,6 +154,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(12, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 38);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Address:";
+            // 
+            // Addresslbl
+            // 
+            this.Addresslbl.AutoSize = true;
+            this.Addresslbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addresslbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.Addresslbl.Location = new System.Drawing.Point(14, 68);
+            this.Addresslbl.Name = "Addresslbl";
+            this.Addresslbl.Size = new System.Drawing.Size(70, 28);
+            this.Addresslbl.TabIndex = 3;
+            this.Addresslbl.Text = "22 yrs";
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -157,7 +184,10 @@
             this.Controls.Add(this.ProfileContainer);
             this.Name = "Profile";
             this.Size = new System.Drawing.Size(1126, 715);
+            this.Load += new System.EventHandler(this.Profile_Load);
             this.ProfileContainer.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -173,10 +203,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label BalanceLabel;
-        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.Label usernamelbl;
         private System.Windows.Forms.Label Age;
         private System.Windows.Forms.Label Namelbl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Addresslbl;
+        private System.Windows.Forms.Label label2;
     }
 }

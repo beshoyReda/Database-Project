@@ -29,15 +29,20 @@
         private void InitializeComponent()
         {
             this.ControlContainer = new System.Windows.Forms.Panel();
+            this.Manu = new System.Windows.Forms.TextBox();
+            this.Manufac = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Quantity = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.DescBox = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SubCateg = new System.Windows.Forms.ComboBox();
             this.Categ = new System.Windows.Forms.ComboBox();
             this.ProductID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PriceBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.ProductName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,27 +50,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.ControlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // ControlContainer
             // 
             this.ControlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
+            this.ControlContainer.Controls.Add(this.Manu);
+            this.ControlContainer.Controls.Add(this.Manufac);
             this.ControlContainer.Controls.Add(this.button3);
             this.ControlContainer.Controls.Add(this.button2);
             this.ControlContainer.Controls.Add(this.button1);
             this.ControlContainer.Controls.Add(this.Quantity);
             this.ControlContainer.Controls.Add(this.label8);
-            this.ControlContainer.Controls.Add(this.richTextBox1);
+            this.ControlContainer.Controls.Add(this.DescBox);
             this.ControlContainer.Controls.Add(this.label6);
             this.ControlContainer.Controls.Add(this.SubCateg);
             this.ControlContainer.Controls.Add(this.Categ);
             this.ControlContainer.Controls.Add(this.ProductID);
             this.ControlContainer.Controls.Add(this.label7);
-            this.ControlContainer.Controls.Add(this.textBox3);
+            this.ControlContainer.Controls.Add(this.PriceBox);
             this.ControlContainer.Controls.Add(this.textBox2);
             this.ControlContainer.Controls.Add(this.ProductName);
             this.ControlContainer.Controls.Add(this.label5);
@@ -78,6 +82,70 @@
             this.ControlContainer.Name = "ControlContainer";
             this.ControlContainer.Size = new System.Drawing.Size(1164, 573);
             this.ControlContainer.TabIndex = 3;
+            this.ControlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlContainer_Paint);
+            // 
+            // Manu
+            // 
+            this.Manu.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Manu.Location = new System.Drawing.Point(769, 295);
+            this.Manu.Name = "Manu";
+            this.Manu.Size = new System.Drawing.Size(257, 38);
+            this.Manu.TabIndex = 21;
+            // 
+            // Manufac
+            // 
+            this.Manufac.AutoSize = true;
+            this.Manufac.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Manufac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
+            this.Manufac.Location = new System.Drawing.Point(569, 298);
+            this.Manufac.Name = "Manufac";
+            this.Manufac.Size = new System.Drawing.Size(155, 31);
+            this.Manufac.TabIndex = 20;
+            this.Manufac.Text = "Manufacturer";
+            this.Manufac.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(918, 505);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(108, 36);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "DELETE";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(918, 378);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 36);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "ADD";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(918, 443);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 36);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "UPDATE";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Quantity
             // 
@@ -98,17 +166,17 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Quantity";
             // 
-            // richTextBox1
+            // DescBox
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
-            this.richTextBox1.Location = new System.Drawing.Point(241, 378);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(649, 163);
-            this.richTextBox1.TabIndex = 14;
-            this.richTextBox1.Text = "";
+            this.DescBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.DescBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DescBox.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(60)))), ((int)(((byte)(76)))));
+            this.DescBox.Location = new System.Drawing.Point(241, 378);
+            this.DescBox.Name = "DescBox";
+            this.DescBox.Size = new System.Drawing.Size(649, 163);
+            this.DescBox.TabIndex = 14;
+            this.DescBox.Text = "";
             // 
             // label6
             // 
@@ -123,21 +191,22 @@
             // 
             // SubCateg
             // 
-            this.SubCateg.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.SubCateg.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubCateg.FormattingEnabled = true;
             this.SubCateg.Location = new System.Drawing.Point(769, 142);
             this.SubCateg.Name = "SubCateg";
-            this.SubCateg.Size = new System.Drawing.Size(257, 39);
+            this.SubCateg.Size = new System.Drawing.Size(257, 33);
             this.SubCateg.TabIndex = 12;
             // 
             // Categ
             // 
-            this.Categ.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Categ.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Categ.FormattingEnabled = true;
             this.Categ.Location = new System.Drawing.Point(241, 150);
             this.Categ.Name = "Categ";
-            this.Categ.Size = new System.Drawing.Size(257, 39);
+            this.Categ.Size = new System.Drawing.Size(257, 33);
             this.Categ.TabIndex = 11;
+            this.Categ.SelectedIndexChanged += new System.EventHandler(this.Categ_SelectedIndexChanged);
             // 
             // ProductID
             // 
@@ -158,13 +227,13 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Product ID";
             // 
-            // textBox3
+            // PriceBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(241, 295);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(257, 38);
-            this.textBox3.TabIndex = 8;
+            this.PriceBox.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.PriceBox.Location = new System.Drawing.Point(241, 295);
+            this.PriceBox.Name = "PriceBox";
+            this.PriceBox.Size = new System.Drawing.Size(257, 38);
+            this.PriceBox.TabIndex = 8;
             // 
             // textBox2
             // 
@@ -179,6 +248,7 @@
             this.ProductName.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
             this.ProductName.Location = new System.Drawing.Point(241, 74);
             this.ProductName.Name = "ProductName";
+            this.ProductName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ProductName.Size = new System.Drawing.Size(257, 38);
             this.ProductName.TabIndex = 6;
             // 
@@ -237,48 +307,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Name";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(918, 443);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 36);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "UPDATE";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(918, 378);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 36);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "ADD";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(100)))), ((int)(((byte)(161)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(918, 505);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 36);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // ProductManageAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -286,6 +314,7 @@
             this.Controls.Add(this.ControlContainer);
             this.Name = "ProductManageAdmin";
             this.Size = new System.Drawing.Size(1164, 573);
+            this.Load += new System.EventHandler(this.ProductManageAdmin_Load);
             this.ControlContainer.ResumeLayout(false);
             this.ControlContainer.PerformLayout();
             this.ResumeLayout(false);
@@ -300,13 +329,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Quantity;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox DescBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox SubCateg;
         private System.Windows.Forms.ComboBox Categ;
         private System.Windows.Forms.TextBox ProductID;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PriceBox;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox ProductName;
         private System.Windows.Forms.Label label5;
@@ -314,5 +343,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Manu;
+        private System.Windows.Forms.Label Manufac;
     }
 }

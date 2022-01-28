@@ -13,7 +13,7 @@ namespace DatabaseProject.models
         public int Balance { get; set; }
         public string ID { get; }
         public string Address { get; set; }
-        public DateTime DoB { get; set; }
+        public string DoB { get; set; }
         public string username { get; }
         public string password { get; }
         public string phone { get; set; }
@@ -22,7 +22,7 @@ namespace DatabaseProject.models
         {
 
         }
-        public Customer(string firstname, string lastname, int balance, string id, string address, DateTime dob, string user, string pass, string phonen)
+        public Customer(string firstname, string lastname, int balance, string id, string address, string dob, string user, string pass, string phonen)
         {
             FirstName = firstname;
             LastName = lastname;

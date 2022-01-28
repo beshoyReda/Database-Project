@@ -73,7 +73,7 @@ namespace DatabaseProject
             Header header = new Header();
             Header.Controls.Add(header);
             ProductContainer.Controls.Clear();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 30; i++)
             {
                 ProductControl productControl = new ProductControl();
                 productControl.Margin = new Padding(5, 5, 5, 5);

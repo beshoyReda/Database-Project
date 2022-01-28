@@ -16,5 +16,10 @@ namespace DatabaseProject
         {
             InitializeComponent();
         }
+
+        private void ControlContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
