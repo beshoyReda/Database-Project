@@ -70,14 +70,21 @@ namespace DatabaseProject
 
         private void load_products()
         {
+            GlobalManager.GetProducts();
             Header header = new Header();
             Header.Controls.Add(header);
             ProductContainer.Controls.Clear();
-            for (int i = 0; i < 30; i++)
+            var x = GlobalManager.products;
+            foreach (Product product in x)
             {
-                ProductControl productControl = new ProductControl();
-                productControl.Margin = new Padding(5, 5, 5, 5);
-                ProductContainer.Controls.Add(productControl);
+                if (product != null)
+                {
+                    ProductControl productControl = new ProductControl(product);
+                    productControl.Margin = new Padding(5, 5, 5, 5);
+                    ProductContainer.Controls.Add(productControl);
+                    Console.WriteLine("loop" + product.price);
+                }
+
             }
         }
 

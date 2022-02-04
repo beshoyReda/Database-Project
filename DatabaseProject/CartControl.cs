@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseProject.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +35,16 @@ namespace DatabaseProject
 
         private void Cart_Load(object sender, EventArgs e)
         {
+            ProdCon.Controls.Clear();
+            float t = 0;
 
+            foreach (var p in GlobalManager.cart.Products)
+            {
+                CartProduct product = new CartProduct(p);
+                ProdCon.Controls.Add(product);
+                t += p.total;
+            }
+            TotalCash.Text = t.ToString();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)

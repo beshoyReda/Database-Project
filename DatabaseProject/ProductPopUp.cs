@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseProject.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,16 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class ProductPopUp : Form
+    internal partial class ProductPopUp : Form
     {
+        Product product; 
         public ProductPopUp()
         {
+            InitializeComponent();
+        }
+        public ProductPopUp(Product _product)
+        {
+            product = _product;
             InitializeComponent();
         }
 
@@ -24,7 +31,7 @@ namespace DatabaseProject
 
         private void ProductPopUp_Load(object sender, EventArgs e)
         {
-            ProductPage productPage = new ProductPage();
+            ProductPage productPage = new ProductPage(product);
             ProductPageCon.Controls.Add(productPage);
         }
     }

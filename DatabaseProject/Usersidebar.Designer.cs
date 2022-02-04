@@ -65,6 +65,7 @@
             this.ButtonContainer.Name = "ButtonContainer";
             this.ButtonContainer.Size = new System.Drawing.Size(275, 632);
             this.ButtonContainer.TabIndex = 2;
+            this.ButtonContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.ButtonContainer_Paint);
             // 
             // panel1
             // 

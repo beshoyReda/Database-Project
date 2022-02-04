@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,28 +11,28 @@ namespace DatabaseProject.models
     {
         public string ID { get; }
         public Customer Customer { get; set; }
-        public List<Product> Products { get; set;}
-        public int Total { get; set; }
+        public List<CartedProduct> Products { get; set;}
+        public float Total { get; set; }
         public int installment { get; set; }
 
         public Cart()
         {
-            Products = new List<Product>();
+            Products = new List<CartedProduct>();
             Total = 0;
         }
         public Cart(Customer customer)
         {
             ID = Guid.NewGuid().ToString();
             Customer = customer;
-            Products = new List<Product>();
+            Products = new List<CartedProduct>();
             Total = 0;
         }
-        public void AddProduct(Product product)
+        public void AddProduct(CartedProduct product)
         {
             try
             {
                 Products.Add(product);
-                Total += product.price;
+                Total += product.total;
             }
             catch (Exception ex)
             {
@@ -39,12 +40,12 @@ namespace DatabaseProject.models
             }
 
         }
-        public void DeleteProduct(Product product)
+        public void DeleteProduct(CartedProduct product)
         {
             try
             {
                 Products.Remove(product);
-                Total -= product.price;
+                Total -= product.total;
             }
             catch (Exception ex)
             {
@@ -59,14 +60,13 @@ namespace DatabaseProject.models
                 return null;
             }
             List<Invoice> list = new List<Invoice>();
-            DateTime date = DateTime.Now;
-            string InvoiceID = Guid.NewGuid().ToString();
-            foreach (Product product in Products)
+            string InvoiceID = ID;
+            string date = DateTime.Now.ToString("yyyy-MM-dd");
+            foreach (var product in Products)
             {
-                int quantity = Products.FindAll(delegate(Product p){ return p.id == product.id && p.state == product.state;}).Count();
-                Products.RemoveAll(delegate (Product p) { return p.id == product.id && p.state == product.state; });
-                int t = product.price * quantity;
-                Invoice invoice = new Invoice(InvoiceID, Customer.ID, product.id, installment, date, t, quantity, product.state);
+                
+                float t = product.total;
+                Invoice invoice = new Invoice(InvoiceID, Customer.ID, product.product.id, installment, t, product.Quantity, product.state, date);
                 list.Add(invoice); 
             }
             return list;
@@ -75,6 +75,25 @@ namespace DatabaseProject.models
         {
             installment = ins;
             List<Invoice> list = GetInvoices();
+            try
+            {
+                DBController dBController = new DBController();
+                if (dBController.OpenConnection())
+                {
+                    foreach(Invoice invoice in list)
+                    {
+                        string query = string.Format("call Buy_Product('{0}', '{1}','{2}', '{3}', '{4}', {5}, {6}, '{7}', {8})",
+                                       invoice.customerID, invoice.id, invoice.productID, invoice.quantity, invoice.date, invoice.state, invoice.type, invoice.state, invoice.amount);
+                        MySqlCommand cmd = new MySqlCommand(query, dBController.connection);
+                        cmd.ExecuteNonQuery();
+                        dBController.CloseConnection();
+                    }
+                }
+            }
+            catch (Exception ex) 
+            { 
+                Logger.LogException(ex.Message);
+            }
             return list;
         }
     }

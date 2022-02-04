@@ -104,6 +104,7 @@
             this.FavoritesHeader.TabIndex = 2;
             this.FavoritesHeader.Text = "Favorites";
             this.FavoritesHeader.UseVisualStyleBackColor = false;
+            this.FavoritesHeader.Click += new System.EventHandler(this.FavoritesHeader_Click);
             // 
             // SearchHeader
             // 

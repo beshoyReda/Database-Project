@@ -30,6 +30,8 @@
         {
             this.ProfileContainer = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Addresslbl = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.BalanceLabel = new System.Windows.Forms.Label();
@@ -38,8 +40,6 @@
             this.Namelbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Addresslbl = new System.Windows.Forms.Label();
             this.ProfileContainer.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -66,6 +66,28 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1064, 385);
             this.panel3.TabIndex = 1;
+            // 
+            // Addresslbl
+            // 
+            this.Addresslbl.AutoSize = true;
+            this.Addresslbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addresslbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.Addresslbl.Location = new System.Drawing.Point(14, 68);
+            this.Addresslbl.Name = "Addresslbl";
+            this.Addresslbl.Size = new System.Drawing.Size(70, 28);
+            this.Addresslbl.TabIndex = 3;
+            this.Addresslbl.Text = "22 yrs";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(12, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 38);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Address:";
             // 
             // panel1
             // 
@@ -119,7 +141,7 @@
             this.Age.AutoSize = true;
             this.Age.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Age.ForeColor = System.Drawing.SystemColors.Control;
-            this.Age.Location = new System.Drawing.Point(449, 19);
+            this.Age.Location = new System.Drawing.Point(449, 26);
             this.Age.Name = "Age";
             this.Age.Size = new System.Drawing.Size(70, 28);
             this.Age.TabIndex = 2;
@@ -153,28 +175,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(196, 190);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(12, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 38);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Address:";
-            // 
-            // Addresslbl
-            // 
-            this.Addresslbl.AutoSize = true;
-            this.Addresslbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Addresslbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.Addresslbl.Location = new System.Drawing.Point(14, 68);
-            this.Addresslbl.Name = "Addresslbl";
-            this.Addresslbl.Size = new System.Drawing.Size(70, 28);
-            this.Addresslbl.TabIndex = 3;
-            this.Addresslbl.Text = "22 yrs";
             // 
             // Profile
             // 

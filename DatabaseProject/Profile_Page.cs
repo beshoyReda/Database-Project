@@ -27,7 +27,7 @@ namespace DatabaseProject
         {
             var ac = GlobalManager.ActiveUser;
             Namelbl.Text = ac.FirstName + ' ' + ac.LastName;
-            Age.Text = ac.DoB;
+            Age.Text = ac.DoB.Split(' ')[0];
             Console.WriteLine(ac.FirstName);
             label1.Text = ac.Balance.ToString();
             usernamelbl.Text = ac.username;

@@ -31,10 +31,9 @@ namespace DatabaseProject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CartControl));
             this.Shopping_lbl = new System.Windows.Forms.Label();
-            this.Deselect_linklbl = new System.Windows.Forms.LinkLabel();
             this.Shopping_panel = new System.Windows.Forms.Panel();
             this.checkout_btn = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.ProdCon = new System.Windows.Forms.FlowLayoutPanel();
             this.total = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,19 +54,8 @@ namespace DatabaseProject
             this.Shopping_lbl.TabIndex = 0;
             this.Shopping_lbl.Text = "Shopping Cart";
             // 
-            // Deselect_linklbl
-            // 
-            this.Deselect_linklbl.AutoSize = true;
-            this.Deselect_linklbl.Location = new System.Drawing.Point(3, 51);
-            this.Deselect_linklbl.Name = "Deselect_linklbl";
-            this.Deselect_linklbl.Size = new System.Drawing.Size(113, 16);
-            this.Deselect_linklbl.TabIndex = 2;
-            this.Deselect_linklbl.TabStop = true;
-            this.Deselect_linklbl.Text = "Deselect all items";
-            // 
             // Shopping_panel
             // 
-            this.Shopping_panel.Controls.Add(this.Deselect_linklbl);
             this.Shopping_panel.Controls.Add(this.Shopping_lbl);
             this.Shopping_panel.Location = new System.Drawing.Point(3, 3);
             this.Shopping_panel.Name = "Shopping_panel";
@@ -89,14 +77,14 @@ namespace DatabaseProject
             this.checkout_btn.Text = "Checkout";
             this.checkout_btn.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
+            // ProdCon
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 86);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1149, 291);
-            this.flowLayoutPanel1.TabIndex = 9;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            this.ProdCon.AutoScroll = true;
+            this.ProdCon.Location = new System.Drawing.Point(3, 86);
+            this.ProdCon.Name = "ProdCon";
+            this.ProdCon.Size = new System.Drawing.Size(1149, 291);
+            this.ProdCon.TabIndex = 9;
+            this.ProdCon.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // total
             // 
@@ -138,16 +126,16 @@ namespace DatabaseProject
             this.TotalCash.TabIndex = 2;
             this.TotalCash.Text = "1000";
             // 
-            // Cart
+            // CartControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.ProdCon);
             this.Controls.Add(this.checkout_btn);
             this.Controls.Add(this.Shopping_panel);
-            this.Name = "Cart";
+            this.Name = "CartControl";
             this.Size = new System.Drawing.Size(1155, 444);
             this.Load += new System.EventHandler(this.Cart_Load);
             this.Shopping_panel.ResumeLayout(false);
@@ -163,10 +151,9 @@ namespace DatabaseProject
         #endregion
 
         private System.Windows.Forms.Label Shopping_lbl;
-        private System.Windows.Forms.LinkLabel Deselect_linklbl;
         private System.Windows.Forms.Panel Shopping_panel;
         private System.Windows.Forms.Button checkout_btn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel ProdCon;
         private System.Windows.Forms.Label total;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

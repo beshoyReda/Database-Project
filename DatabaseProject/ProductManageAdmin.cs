@@ -27,9 +27,10 @@ namespace DatabaseProject
             {
                 DBController dBController = new DBController();
                 string id = Guid.NewGuid().ToString();
+                string invID = Guid.NewGuid().ToString();
                 string manid = GetManID();
-                string query = string.Format("insert into product values('{0}', '{1}','{2}', '{3}', '{4}', {5}, {6}, '{7}')",
-                        id, manid, ProductName.Text.ToLower().Trim(), DescBox.Text.ToLower().Trim(), PickedCategory,0,  PriceBox.Text.ToLower().Trim(), SubCateg.SelectedIndex + 1);
+                string query = string.Format("call Add_New_Product('{0}', '{1}','{2}', '{3}', '{4}', {5}, {6}, '{7}', {8}, {9})",
+                        id, ProductName.Text.ToLower().Trim(), DescBox.Text.ToLower().Trim(), PickedCategory, invID,  PriceBox.Text.ToLower().Trim(), SubCateg.SelectedIndex + 1, manid, Quantity.Text, Ref.Text);
                 
                 if (dBController.OpenConnection())
                 {

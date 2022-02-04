@@ -143,7 +143,6 @@ namespace DatabaseProject
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Balance;
         private System.Windows.Forms.Button btntopup;
         private System.Windows.Forms.Label purchases;

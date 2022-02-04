@@ -71,5 +71,19 @@ namespace DatabaseProject
             this.Parent.Parent.Controls[0].Controls.Clear();
             this.Parent.Parent.Controls[0].Controls.Add(search);
         }
+
+        private void FavoritesHeader_Click(object sender, EventArgs e)
+        {
+            GlobalManager.GetFavorites();
+            this.Parent.Parent.Controls[0].Controls.Clear();
+            int i = 0;
+
+            foreach (var p in GlobalManager.favorites)
+            {
+                Console.WriteLine(i++);
+                ProductControl product = new ProductControl(p);
+                this.Parent.Parent.Controls[0].Controls.Add(product);
+            }
+        }
     }
 }

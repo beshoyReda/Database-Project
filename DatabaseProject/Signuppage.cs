@@ -41,13 +41,14 @@ namespace DatabaseProject
             try
             {
                 string id = Guid.NewGuid().ToString();
-                string q = string.Format("call SignUp('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', {6}, '{7}')",
-                    FnameBox.Text.Trim(), LnameBox.Text.Trim(), id, Usernamebox.Text.Trim(), PasswordBox.Text.Trim(), phonenumberBox.Text.Trim(), dateTimePicker1.Value.Date, AddressBox.Text.Trim());
+                string q = string.Format("call SignUp('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+                    FnameBox.Text.Trim(), LnameBox.Text.Trim(), id, Usernamebox.Text.Trim(), PasswordBox.Text.Trim(), phonenumberBox.Text.Trim(), dateTimePicker1.Value.ToString("yyyy-MM-dd"), AddressBox.Text.Trim());
                 if (dBController.OpenConnection())
                 {
                     MySqlCommand cmd = new MySqlCommand(q, dBController.connection);
                     cmd.ExecuteNonQuery();
                     dBController.CloseConnection();
+                    this.Parent.Dispose();
                 }
             }
             catch (Exception ex)

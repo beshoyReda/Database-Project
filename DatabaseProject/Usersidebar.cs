@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseProject.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,10 +27,13 @@ namespace DatabaseProject
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
+            GlobalManager.GetProducts();
             this.Parent.Parent.Parent.Controls[0].Controls[0].Controls.Clear();
-            for (int i = 0; i < 30; i++)
+            var x = GlobalManager.products;
+            foreach (Product product in x)
             {
-                ProductControl productControl = new ProductControl();
+
+                ProductControl productControl = new ProductControl(product);
                 productControl.Margin = new Padding(5, 5, 5, 5);
                 this.Parent.Parent.Parent.Controls[0].Controls[0].Controls.Add(productControl);
             }
@@ -54,6 +58,11 @@ namespace DatabaseProject
             Profile profile = new Profile();
             this.Parent.Parent.Parent.Controls[0].Controls[0].Controls.Clear();
             this.Parent.Parent.Parent.Controls[0].Controls[0].Controls.Add(profile);
+        }
+
+        private void ButtonContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

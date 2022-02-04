@@ -43,7 +43,7 @@
             this.ProductID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.PriceBox = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Ref = new System.Windows.Forms.TextBox();
             this.ProductName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Refurbished = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             this.ControlContainer.Controls.Add(this.ProductID);
             this.ControlContainer.Controls.Add(this.label7);
             this.ControlContainer.Controls.Add(this.PriceBox);
-            this.ControlContainer.Controls.Add(this.textBox2);
+            this.ControlContainer.Controls.Add(this.Ref);
             this.ControlContainer.Controls.Add(this.ProductName);
             this.ControlContainer.Controls.Add(this.label5);
             this.ControlContainer.Controls.Add(this.Refurbished);
@@ -235,13 +235,13 @@
             this.PriceBox.Size = new System.Drawing.Size(257, 38);
             this.PriceBox.TabIndex = 8;
             // 
-            // textBox2
+            // Ref
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(241, 221);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(257, 38);
-            this.textBox2.TabIndex = 7;
+            this.Ref.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Ref.Location = new System.Drawing.Point(241, 221);
+            this.Ref.Name = "Ref";
+            this.Ref.Size = new System.Drawing.Size(257, 38);
+            this.Ref.TabIndex = 7;
             // 
             // ProductName
             // 
@@ -336,7 +336,7 @@
         private System.Windows.Forms.TextBox ProductID;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox PriceBox;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Ref;
         private System.Windows.Forms.TextBox ProductName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Refurbished;

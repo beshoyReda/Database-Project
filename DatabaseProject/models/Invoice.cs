@@ -12,8 +12,8 @@ namespace DatabaseProject.models
         public string customerID { get; set; }
         public string productID { get; set; }
         public int type { get; set; }
-        public DateTime created { get; set; }
         public float amount { get; set; }
+        public string date { get; set; }
         public int quantity { get; set; }
         public int state { get; set; }
 
@@ -21,16 +21,16 @@ namespace DatabaseProject.models
         {
 
         }
-        public Invoice(string id, string cusID, string prodID, int type, DateTime date, float amount, int q, int _state)
+        public Invoice(string id, string cusID, string prodID, int type, float amount, int q, int _state, string _date)
         {
             this.id = id;
             this.customerID = cusID;
             this.productID = prodID;
             this.type = type;
-            this.created = date;
             this.amount = amount;
             this.quantity = q;
             this.state = _state;
+            this.date = _date;
         }
     }
 }

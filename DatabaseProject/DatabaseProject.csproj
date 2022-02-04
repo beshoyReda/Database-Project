@@ -195,6 +195,12 @@
     <Compile Include="AdminUsers.Designer.cs">
       <DependentUpon>AdminUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="CardProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardProduct.Designer.cs">
+      <DependentUpon>CardProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="CartControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -238,6 +244,7 @@
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
     <Compile Include="models\Cart.cs" />
+    <Compile Include="models\CartedProduct.cs" />
     <Compile Include="models\Customer.cs" />
     <Compile Include="models\DBController.cs" />
     <Compile Include="models\GlobalManager.cs" />
@@ -344,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminUsers.resx">
       <DependentUpon>AdminUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardProduct.resx">
+      <DependentUpon>CardProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CartControl.resx">
       <DependentUpon>CartControl.cs</DependentUpon>
