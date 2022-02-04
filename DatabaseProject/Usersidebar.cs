@@ -49,7 +49,7 @@ namespace DatabaseProject
         private void Purchasesbtn_Click(object sender, EventArgs e)
         {
             this.Parent.Parent.Parent.Controls[0].Controls[0].Controls.Clear();
-            Purchases purschase = new Purchases();
+            purchasesPage purschase = new purchasesPage();
             this.Parent.Parent.Parent.Controls[0].Controls[0].Controls.Add(purschase);
         }
 

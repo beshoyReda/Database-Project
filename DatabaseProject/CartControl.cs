@@ -51,5 +51,10 @@ namespace DatabaseProject
         {
 
         }
+
+        private void checkout_btn_Click(object sender, EventArgs e)
+        {
+            GlobalManager.cart.Checkout(comboBox1.SelectedIndex);
+        }
     }
 }

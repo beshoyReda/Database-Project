@@ -85,5 +85,12 @@ namespace DatabaseProject
                 this.Parent.Parent.Controls[0].Controls.Add(product);
             }
         }
+
+        private void CategoriesHeader_Click(object sender, EventArgs e)
+        {
+            this.Parent.Parent.Controls[0].Controls.Clear();
+            CatSearch catSearch = new CatSearch();
+            this.Parent.Parent.Controls[0].Controls.Add(catSearch);
+        }
     }
 }

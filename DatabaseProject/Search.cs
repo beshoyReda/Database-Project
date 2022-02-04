@@ -21,5 +21,10 @@ namespace DatabaseProject
         {
 
         }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

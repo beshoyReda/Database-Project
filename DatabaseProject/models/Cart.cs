@@ -80,14 +80,16 @@ namespace DatabaseProject.models
                 DBController dBController = new DBController();
                 if (dBController.OpenConnection())
                 {
-                    foreach(Invoice invoice in list)
+                    MySqlCommand cmd = new MySqlCommand(); ;
+                    foreach (Invoice invoice in list)
                     {
                         string query = string.Format("call Buy_Product('{0}', '{1}','{2}', '{3}', '{4}', {5}, {6}, '{7}', {8})",
                                        invoice.customerID, invoice.id, invoice.productID, invoice.quantity, invoice.date, invoice.state, invoice.type, invoice.state, invoice.amount);
-                        MySqlCommand cmd = new MySqlCommand(query, dBController.connection);
-                        cmd.ExecuteNonQuery();
-                        dBController.CloseConnection();
+                        cmd = new MySqlCommand(query, dBController.connection);
+                        
                     }
+                    cmd.ExecuteNonQuery();
+                    dBController.CloseConnection();
                 }
             }
             catch (Exception ex) 

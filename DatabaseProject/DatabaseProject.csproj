@@ -207,6 +207,12 @@
     <Compile Include="CartControl.Designer.cs">
       <DependentUpon>CartControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CatSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CatSearch.Designer.cs">
+      <DependentUpon>CatSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="FeaturedSlideShow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,6 +230,12 @@
     </Compile>
     <Compile Include="InitializationPage.Designer.cs">
       <DependentUpon>InitializationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inv.Designer.cs">
+      <DependentUpon>inv.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs">
       <SubType>UserControl</SubType>
@@ -295,6 +307,12 @@
     <Compile Include="Purchases.Designer.cs">
       <DependentUpon>Purchases.cs</DependentUpon>
     </Compile>
+    <Compile Include="purchasesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="purchasesPage.Designer.cs">
+      <DependentUpon>purchasesPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -358,11 +376,17 @@
     <EmbeddedResource Include="CartControl.resx">
       <DependentUpon>CartControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CatSearch.resx">
+      <DependentUpon>CatSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InitializationPage.resx">
       <DependentUpon>InitializationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv.resx">
+      <DependentUpon>inv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item.resx">
       <DependentUpon>Item.cs</DependentUpon>
@@ -402,6 +426,9 @@
     </Compile>
     <EmbeddedResource Include="Purchases.resx">
       <DependentUpon>Purchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchasesPage.resx">
+      <DependentUpon>purchasesPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>

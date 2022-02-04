@@ -138,6 +138,7 @@
             this.CategoriesHeader.TabIndex = 0;
             this.CategoriesHeader.Text = "Categories";
             this.CategoriesHeader.UseVisualStyleBackColor = false;
+            this.CategoriesHeader.Click += new System.EventHandler(this.CategoriesHeader_Click);
             // 
             // SlideShow
             // 

@@ -18,6 +18,7 @@ namespace DatabaseProject.models
         public static List<Product> products = new List<Product>();
         public static List<Product> favorites = new List<Product>();
         private static List<string> favoriteID = new List<string>();
+        public static List<Invoice> UserInvoices = new List<Invoice>();
 
         public static bool InitializeApp()
         {
@@ -53,6 +54,7 @@ namespace DatabaseProject.models
                 ActiveUser = customer;
                 cart = new Cart(customer);
                 GetFavorites();
+                GetInvoices();
             }
         }
         public static void SignOutUser()
@@ -193,6 +195,50 @@ namespace DatabaseProject.models
             {
                 Logger.LogException("Get Favorites" + " " + e.ToString());
             }
+        }
+        public static void GetInvoices()
+        {
+
+
+            DBController dBController = new DBController();
+
+            try
+            {
+                string id = string.Empty;
+                string customerID = string.Empty;
+                string productID = string.Empty;
+                int type = 0;
+                float amount = 0;
+                string date = string.Empty;
+                int quantity = 0;
+                int state = 0;
+                string query = string.Format("call GetInv('{0}')", ActiveUser.ID);
+                if (dBController.OpenConnection())
+                {
+                    products.Clear();
+                    MySqlCommand cmd = new MySqlCommand(query, dBController.connection);
+                    MySqlDataReader dataReader = cmd.ExecuteReader();
+                    while (dataReader.Read())
+                    {
+                        id = dataReader.GetString("Inv_ID");
+                        productID = dataReader.GetString("product_number");
+                        type = dataReader.GetInt32("type_ID");
+                        amount = dataReader.GetInt32("Amount");
+                        date = dataReader.GetString("Inv_Date");
+                        quantity = dataReader.GetInt32("Quantity");
+                        state = dataReader.GetInt32("Return_State");
+                        Invoice inv = new Invoice(id, ActiveUser.ID, productID, type, amount,quantity, state, date);
+                        UserInvoices.Add(inv);
+                    }
+                    dataReader.Close();
+                    dBController.CloseConnection();
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.LogException("Get Products" + " " + e.ToString());
+            }
+
         }
     }
 }

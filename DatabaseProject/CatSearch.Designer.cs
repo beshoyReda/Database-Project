@@ -1,6 +1,6 @@
 ﻿namespace DatabaseProject
 {
-    partial class Search
+    partial class CatSearch
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,30 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Searchlbl = new System.Windows.Forms.Label();
-            this.SearchBox = new System.Windows.Forms.TextBox();
+            this.Categ = new System.Windows.Forms.ComboBox();
+            this.SubCateg = new System.Windows.Forms.ComboBox();
             this.SearchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Searchlbl
+            // Categ
             // 
-            this.Searchlbl.AutoSize = true;
-            this.Searchlbl.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Searchlbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.Searchlbl.Location = new System.Drawing.Point(195, 43);
-            this.Searchlbl.Name = "Searchlbl";
-            this.Searchlbl.Size = new System.Drawing.Size(137, 31);
-            this.Searchlbl.TabIndex = 0;
-            this.Searchlbl.Text = "Search Item";
+            this.Categ.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Categ.FormattingEnabled = true;
+            this.Categ.Location = new System.Drawing.Point(75, 47);
+            this.Categ.Name = "Categ";
+            this.Categ.Size = new System.Drawing.Size(404, 39);
+            this.Categ.TabIndex = 0;
+            this.Categ.SelectedIndexChanged += new System.EventHandler(this.Categ_SelectedIndexChanged);
             // 
-            // SearchBox
+            // SubCateg
             // 
-            this.SearchBox.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchBox.Location = new System.Drawing.Point(348, 40);
-            this.SearchBox.Name = "SearchBox";
-            this.SearchBox.Size = new System.Drawing.Size(402, 38);
-            this.SearchBox.TabIndex = 1;
-            this.SearchBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.SubCateg.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.SubCateg.FormattingEnabled = true;
+            this.SubCateg.Location = new System.Drawing.Point(539, 47);
+            this.SubCateg.Name = "SubCateg";
+            this.SubCateg.Size = new System.Drawing.Size(348, 39);
+            this.SubCateg.TabIndex = 1;
             // 
             // SearchButton
             // 
@@ -60,33 +59,33 @@
             this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SearchButton.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchButton.ForeColor = System.Drawing.Color.White;
-            this.SearchButton.Location = new System.Drawing.Point(790, 35);
+            this.SearchButton.Location = new System.Drawing.Point(976, 39);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(117, 47);
-            this.SearchButton.TabIndex = 2;
+            this.SearchButton.TabIndex = 3;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = false;
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
-            // Search
+            // CatSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(43)))), ((int)(((byte)(83)))));
             this.Controls.Add(this.SearchButton);
-            this.Controls.Add(this.SearchBox);
-            this.Controls.Add(this.Searchlbl);
-            this.Name = "Search";
+            this.Controls.Add(this.SubCateg);
+            this.Controls.Add(this.Categ);
+            this.Name = "CatSearch";
             this.Size = new System.Drawing.Size(1126, 118);
+            this.Load += new System.EventHandler(this.CatSearch_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label Searchlbl;
-        private System.Windows.Forms.TextBox SearchBox;
+        private System.Windows.Forms.ComboBox Categ;
+        private System.Windows.Forms.ComboBox SubCateg;
         private System.Windows.Forms.Button SearchButton;
     }
 }

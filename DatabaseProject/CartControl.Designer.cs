@@ -38,6 +38,7 @@ namespace DatabaseProject
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TotalCash = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Shopping_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -76,6 +77,7 @@ namespace DatabaseProject
             this.checkout_btn.TabIndex = 8;
             this.checkout_btn.Text = "Checkout";
             this.checkout_btn.UseVisualStyleBackColor = false;
+            this.checkout_btn.Click += new System.EventHandler(this.checkout_btn_Click);
             // 
             // ProdCon
             // 
@@ -126,11 +128,23 @@ namespace DatabaseProject
             this.TotalCash.TabIndex = 2;
             this.TotalCash.Text = "1000";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Installments",
+            "Cash"});
+            this.comboBox1.Location = new System.Drawing.Point(651, 395);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 11;
+            // 
             // CartControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(192)))), ((int)(((byte)(223)))));
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ProdCon);
             this.Controls.Add(this.checkout_btn);
@@ -158,5 +172,6 @@ namespace DatabaseProject
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label TotalCash;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
